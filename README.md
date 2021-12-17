@@ -17,7 +17,7 @@ uploaded the
 [tls.tls.d9f5019e-cgu.2.rcgu.o](https://github.com/gregbuchholz/thread_local_storage/blob/main/objs/tls.tls.d9f5019e-cgu.2.rcgu.o)
 file (plus the other `*.o` in
 [objs/](https://github.com/gregbuchholz/thread_local_storage/tree/main/objs))
-along with the assembly file ([tls.s]()) that comes from using the command:
+along with the assembly file ([tls.s](https://github.com/gregbuchholz/thread_local_storage/blob/main/objs/tls.s)) that comes from using the command:
 
     cargo +nightly rustc --target=wasm32-unknown-emscripten --release -Z build-std=panic_abort,std  -- --emit asm
 
