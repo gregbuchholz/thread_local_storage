@@ -1,4 +1,4 @@
-#Thread local storage link issue with Rust/WASM/Emscripten
+# Thread local storage link issue with Rust/WASM/Emscripten
 
 This repository is a small example to help narrow down the cause of a wasm-ld
 error which occurs when trying to enable threads on a Rust program compiling to
