@@ -21,13 +21,12 @@ along with the assembly file ([tls.s](https://github.com/gregbuchholz/thread_loc
 
     cargo +nightly rustc --target=wasm32-unknown-emscripten --release -Z build-std=panic_abort,std  -- --emit asm
 
-...for further inspection.  The file [tls.rustfilt.s]() is the tls.s assmebly
+...for further inspection.  The file [tls.rustfilt.s](https://github.com/gregbuchholz/thread_local_storage/blob/main/objs/tls.rustfilt.s) is the tls.s assmebly
 that has been run through the [rustfilt](https://lib.rs/crates/rustfilt) demangler, and likewise
-[objs/tls.tls.bb3d90e8-cgu.2.rcgu.txt] is the `*.o` file that has also been run
+[objs/tls.tls.bb3d90e8-cgu.2.rcgu.txt](https://github.com/gregbuchholz/thread_local_storage/blob/main/objs/tls.tls.bb3d90e8-cgu.2.rcgu.txt) is the `*.o` file that has also been run
 through [wasm-objdump](https://github.com/WebAssembly/wabt) followed by rustfilt.
 
 There is more detail on this topic on a
 [comment](https://internals.rust-lang.org/t/enabling-threads-on-wasm32-unknown-enscripten/15755)
-on the Rust Internals forum, and in [another
-repository](https://github.com/gregbuchholz/threads). 
+on the Rust Internals forum, and in [another repository](https://github.com/gregbuchholz/threads). 
 
