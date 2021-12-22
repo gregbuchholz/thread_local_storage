@@ -1,0 +1,765 @@
+
+tls.tls.bb3d90e8-cgu.2.rcgu.o:	file format wasm 0x1
+
+Code Disassembly:
+
+0004ba func[18] <core::ptr::drop_in_place<std::thread::Thread>>:
+ 0004bb: 02 40                      | block
+ 0004bd: 20 00                      |   local.get 0
+ 0004bf: 28 02 00                   |   i32.load 2 0
+ 0004c2: 41 01                      |   i32.const 1
+ 0004c4: fe 25 02 00                |   i32.atomic.rmw.sub 2 0
+ 0004c8: 41 01                      |   i32.const 1
+ 0004ca: 47                         |   i32.ne
+ 0004cb: 0d 00                      |   br_if 0
+ 0004cd: fe 03 00                   |   atomic.fence 0
+ 0004d0: 20 00                      |   local.get 0
+ 0004d2: 10 80 80 80 80 00          |   call 0 <env.alloc::sync::Arc<T>::drop_slow>
+ 0004d8: 0b                         | end
+ 0004d9: 0b                         | end
+0004db func[19] <core::ptr::drop_in_place<std::thread::Packet<()>>>:
+ 0004dc: 02 40                      | block
+ 0004de: 20 00                      |   local.get 0
+ 0004e0: 28 02 00                   |   i32.load 2 0
+ 0004e3: 41 01                      |   i32.const 1
+ 0004e5: fe 25 02 00                |   i32.atomic.rmw.sub 2 0
+ 0004e9: 41 01                      |   i32.const 1
+ 0004eb: 47                         |   i32.ne
+ 0004ec: 0d 00                      |   br_if 0
+ 0004ee: fe 03 00                   |   atomic.fence 0
+ 0004f1: 20 00                      |   local.get 0
+ 0004f3: 10 81 80 80 80 00          |   call 1 <env.alloc::sync::Arc<T>::drop_slow>
+ 0004f9: 0b                         | end
+ 0004fa: 0b                         | end
+0004fd func[20] <core::ptr::drop_in_place<std::thread::JoinHandle<()>>>:
+ 0004fe: 02 7f                      | local[0..1] type=i32
+ 000500: 02 40                      | block
+ 000502: 02 40                      |   block
+ 000504: 02 40                      |     block
+ 000506: 02 40                      |       block
+ 000508: 20 00                      |         local.get 0
+ 00050a: 28 02 00                   |         i32.load 2 0
+ 00050d: 45                         |         i32.eqz
+ 00050e: 0d 00                      |         br_if 0
+ 000510: 23 80 80 80 80 00          |         global.get 0 <env.__tls_base>
+ 000516: 41 80 80 80 80 00          |         i32.const 0
+ 00051c: 6a                         |         i32.add
+ 00051d: 22 01                      |         local.tee 1
+ 00051f: 41 00                      |         i32.const 0
+ 000521: 36 02 00                   |         i32.store 2 0
+ 000524: 41 81 80 80 80 00          |         i32.const 1
+ 00052a: 20 00                      |         local.get 0
+ 00052c: 41 04                      |         i32.const 4
+ 00052e: 6a                         |         i32.add
+ 00052f: 10 83 80 80 80 00          |         call 3 <invoke_vi>
+ 000535: 20 01                      |         local.get 1
+ 000537: 28 02 00                   |         i32.load 2 0
+ 00053a: 21 02                      |         local.set 2
+ 00053c: 20 01                      |         local.get 1
+ 00053e: 41 00                      |         i32.const 0
+ 000540: 36 02 00                   |         i32.store 2 0
+ 000543: 20 02                      |         local.get 2
+ 000545: 41 01                      |         i32.const 1
+ 000547: 46                         |         i32.eq
+ 000548: 0d 01                      |         br_if 1
+ 00054a: 0b                         |       end
+ 00054b: 02 40                      |       block
+ 00054d: 20 00                      |         local.get 0
+ 00054f: 28 02 08                   |         i32.load 2 8
+ 000552: 41 01                      |         i32.const 1
+ 000554: fe 25 02 00                |         i32.atomic.rmw.sub 2 0
+ 000558: 41 01                      |         i32.const 1
+ 00055a: 47                         |         i32.ne
+ 00055b: 0d 00                      |         br_if 0
+ 00055d: 23 80 80 80 80 00          |         global.get 0 <env.__tls_base>
+ 000563: 21 01                      |         local.set 1
+ 000565: fe 03 00                   |         atomic.fence 0
+ 000568: 20 01                      |         local.get 1
+ 00056a: 41 80 80 80 80 00          |         i32.const 0
+ 000570: 6a                         |         i32.add
+ 000571: 22 01                      |         local.tee 1
+ 000573: 41 00                      |         i32.const 0
+ 000575: 36 02 00                   |         i32.store 2 0
+ 000578: 41 82 80 80 80 00          |         i32.const 2
+ 00057e: 20 00                      |         local.get 0
+ 000580: 41 08                      |         i32.const 8
+ 000582: 6a                         |         i32.add
+ 000583: 10 83 80 80 80 00          |         call 3 <invoke_vi>
+ 000589: 20 01                      |         local.get 1
+ 00058b: 28 02 00                   |         i32.load 2 0
+ 00058e: 21 02                      |         local.set 2
+ 000590: 20 01                      |         local.get 1
+ 000592: 41 00                      |         i32.const 0
+ 000594: 36 02 00                   |         i32.store 2 0
+ 000597: 20 02                      |         local.get 2
+ 000599: 41 01                      |         i32.const 1
+ 00059b: 46                         |         i32.eq
+ 00059c: 0d 02                      |         br_if 2
+ 00059e: 0b                         |       end
+ 00059f: 02 40                      |       block
+ 0005a1: 20 00                      |         local.get 0
+ 0005a3: 28 02 0c                   |         i32.load 2 12
+ 0005a6: 41 01                      |         i32.const 1
+ 0005a8: fe 25 02 00                |         i32.atomic.rmw.sub 2 0
+ 0005ac: 41 01                      |         i32.const 1
+ 0005ae: 47                         |         i32.ne
+ 0005af: 0d 00                      |         br_if 0
+ 0005b1: fe 03 00                   |         atomic.fence 0
+ 0005b4: 20 00                      |         local.get 0
+ 0005b6: 41 0c                      |         i32.const 12
+ 0005b8: 6a                         |         i32.add
+ 0005b9: 10 81 80 80 80 00          |         call 1 <env.alloc::sync::Arc<T>::drop_slow>
+ 0005bf: 0b                         |       end
+ 0005c0: 0f                         |       return
+ 0005c1: 0b                         |     end
+ 0005c2: 10 84 80 80 80 00          |     call 4 <__cxa_find_matching_catch_2>
+ 0005c8: 21 01                      |     local.set 1
+ 0005ca: 10 85 80 80 80 00          |     call 5 <getTempRet0>
+ 0005d0: 1a                         |     drop
+ 0005d1: 20 00                      |     local.get 0
+ 0005d3: 41 08                      |     i32.const 8
+ 0005d5: 6a                         |     i32.add
+ 0005d6: 10 92 80 80 80 00          |     call 18 <core::ptr::drop_in_place<std::thread::Thread>>
+ 0005dc: 0c 01                      |     br 1
+ 0005de: 0b                         |   end
+ 0005df: 10 84 80 80 80 00          |   call 4 <__cxa_find_matching_catch_2>
+ 0005e5: 21 01                      |   local.set 1
+ 0005e7: 10 85 80 80 80 00          |   call 5 <getTempRet0>
+ 0005ed: 1a                         |   drop
+ 0005ee: 0b                         | end
+ 0005ef: 20 00                      | local.get 0
+ 0005f1: 41 0c                      | i32.const 12
+ 0005f3: 6a                         | i32.add
+ 0005f4: 10 93 80 80 80 00          | call 19 <core::ptr::drop_in_place<std::thread::Packet<()>>>
+ 0005fa: 20 01                      | local.get 1
+ 0005fc: 10 86 80 80 80 00          | call 6 <__resumeException>
+ 000602: 00                         | unreachable
+ 000603: 0b                         | end
+000606 func[21] <core::ptr::drop_in_place<alloc::boxed::Box<dyn core::any::Any+core::marker::Send>>>:
+ 000607: 02 7f                      | local[0..1] type=i32
+ 000609: 23 80 80 80 80 00          | global.get 0 <env.__tls_base>
+ 00060f: 21 01                      | local.set 1
+ 000611: 20 00                      | local.get 0
+ 000613: 28 02 00                   | i32.load 2 0
+ 000616: 21 02                      | local.set 2
+ 000618: 20 01                      | local.get 1
+ 00061a: 41 80 80 80 80 00          | i32.const 0
+ 000620: 6a                         | i32.add
+ 000621: 22 01                      | local.tee 1
+ 000623: 41 00                      | i32.const 0
+ 000625: 36 02 00                   | i32.store 2 0
+ 000628: 20 00                      | local.get 0
+ 00062a: 28 02 04                   | i32.load 2 4
+ 00062d: 28 02 00                   | i32.load 2 0
+ 000630: 20 02                      | local.get 2
+ 000632: 10 83 80 80 80 00          | call 3 <invoke_vi>
+ 000638: 20 01                      | local.get 1
+ 00063a: 28 02 00                   | i32.load 2 0
+ 00063d: 21 02                      | local.set 2
+ 00063f: 20 01                      | local.get 1
+ 000641: 41 00                      | i32.const 0
+ 000643: 36 02 00                   | i32.store 2 0
+ 000646: 02 40                      | block
+ 000648: 20 02                      |   local.get 2
+ 00064a: 41 01                      |   i32.const 1
+ 00064c: 46                         |   i32.eq
+ 00064d: 0d 00                      |   br_if 0
+ 00064f: 02 40                      |   block
+ 000651: 20 00                      |     local.get 0
+ 000653: 28 02 04                   |     i32.load 2 4
+ 000656: 22 01                      |     local.tee 1
+ 000658: 28 02 04                   |     i32.load 2 4
+ 00065b: 22 02                      |     local.tee 2
+ 00065d: 45                         |     i32.eqz
+ 00065e: 0d 00                      |     br_if 0
+ 000660: 20 00                      |     local.get 0
+ 000662: 28 02 00                   |     i32.load 2 0
+ 000665: 20 02                      |     local.get 2
+ 000667: 20 01                      |     local.get 1
+ 000669: 28 02 08                   |     i32.load 2 8
+ 00066c: 10 87 80 80 80 00          |     call 7 <env.__rust_dealloc>
+ 000672: 0b                         |   end
+ 000673: 0f                         |   return
+ 000674: 0b                         | end
+ 000675: 10 84 80 80 80 00          | call 4 <__cxa_find_matching_catch_2>
+ 00067b: 21 01                      | local.set 1
+ 00067d: 10 85 80 80 80 00          | call 5 <getTempRet0>
+ 000683: 1a                         | drop
+ 000684: 20 00                      | local.get 0
+ 000686: 28 02 00                   | i32.load 2 0
+ 000689: 20 00                      | local.get 0
+ 00068b: 28 02 04                   | i32.load 2 4
+ 00068e: 10 96 80 80 80 00          | call 22 <alloc::alloc::box_free>
+ 000694: 20 01                      | local.get 1
+ 000696: 10 86 80 80 80 00          | call 6 <__resumeException>
+ 00069c: 00                         | unreachable
+ 00069d: 0b                         | end
+00069f func[22] <alloc::alloc::box_free>:
+ 0006a0: 01 7f                      | local[0] type=i32
+ 0006a2: 02 40                      | block
+ 0006a4: 20 01                      |   local.get 1
+ 0006a6: 28 02 04                   |   i32.load 2 4
+ 0006a9: 22 02                      |   local.tee 2
+ 0006ab: 45                         |   i32.eqz
+ 0006ac: 0d 00                      |   br_if 0
+ 0006ae: 20 00                      |   local.get 0
+ 0006b0: 20 02                      |   local.get 2
+ 0006b2: 20 01                      |   local.get 1
+ 0006b4: 28 02 08                   |   i32.load 2 8
+ 0006b7: 10 87 80 80 80 00          |   call 7 <env.__rust_dealloc>
+ 0006bd: 0b                         | end
+ 0006be: 0b                         | end
+0006c1 func[23] <tls::xs>:
+ 0006c2: 03 7f                      | local[0..2] type=i32
+ 0006c4: 23 81 80 80 80 00          | global.get 1 <env.__stack_pointer>
+ 0006ca: 41 30                      | i32.const 48
+ 0006cc: 6b                         | i32.sub
+ 0006cd: 22 00                      | local.tee 0
+ 0006cf: 24 81 80 80 80 00          | global.set 1 <env.__stack_pointer>
+ 0006d5: 20 00                      | local.get 0
+ 0006d7: 41 1c                      | i32.const 28
+ 0006d9: 6a                         | i32.add
+ 0006da: 22 01                      | local.tee 1
+ 0006dc: 41 00                      | i32.const 0
+ 0006de: 36 02 00                   | i32.store 2 0
+ 0006e1: 20 00                      | local.get 0
+ 0006e3: 41 c8 80 80 80 00          | i32.const 72
+ 0006e9: 36 02 18                   | i32.store 2 24
+ 0006ec: 20 00                      | local.get 0
+ 0006ee: 42 01                      | i64.const 1
+ 0006f0: 37 02 0c                   | i64.store 2 12
+ 0006f3: 20 00                      | local.get 0
+ 0006f5: 41 c0 80 80 80 00          | i32.const 64
+ 0006fb: 36 02 08                   | i32.store 2 8
+ 0006fe: 20 00                      | local.get 0
+ 000700: 41 08                      | i32.const 8
+ 000702: 6a                         | i32.add
+ 000703: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 000709: 20 01                      | local.get 1
+ 00070b: 41 00                      | i32.const 0
+ 00070d: 36 02 00                   | i32.store 2 0
+ 000710: 20 00                      | local.get 0
+ 000712: 41 c8 80 80 80 00          | i32.const 72
+ 000718: 36 02 18                   | i32.store 2 24
+ 00071b: 20 00                      | local.get 0
+ 00071d: 42 01                      | i64.const 1
+ 00071f: 37 02 0c                   | i64.store 2 12
+ 000722: 20 00                      | local.get 0
+ 000724: 41 c0 80 80 80 00          | i32.const 64
+ 00072a: 36 02 08                   | i32.store 2 8
+ 00072d: 20 00                      | local.get 0
+ 00072f: 41 08                      | i32.const 8
+ 000731: 6a                         | i32.add
+ 000732: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 000738: 20 01                      | local.get 1
+ 00073a: 41 00                      | i32.const 0
+ 00073c: 36 02 00                   | i32.store 2 0
+ 00073f: 20 00                      | local.get 0
+ 000741: 41 c8 80 80 80 00          | i32.const 72
+ 000747: 36 02 18                   | i32.store 2 24
+ 00074a: 20 00                      | local.get 0
+ 00074c: 42 01                      | i64.const 1
+ 00074e: 37 02 0c                   | i64.store 2 12
+ 000751: 20 00                      | local.get 0
+ 000753: 41 c0 80 80 80 00          | i32.const 64
+ 000759: 36 02 08                   | i32.store 2 8
+ 00075c: 20 00                      | local.get 0
+ 00075e: 41 08                      | i32.const 8
+ 000760: 6a                         | i32.add
+ 000761: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 000767: 20 01                      | local.get 1
+ 000769: 41 00                      | i32.const 0
+ 00076b: 36 02 00                   | i32.store 2 0
+ 00076e: 20 00                      | local.get 0
+ 000770: 41 c8 80 80 80 00          | i32.const 72
+ 000776: 36 02 18                   | i32.store 2 24
+ 000779: 20 00                      | local.get 0
+ 00077b: 42 01                      | i64.const 1
+ 00077d: 37 02 0c                   | i64.store 2 12
+ 000780: 20 00                      | local.get 0
+ 000782: 41 c0 80 80 80 00          | i32.const 64
+ 000788: 36 02 08                   | i32.store 2 8
+ 00078b: 20 00                      | local.get 0
+ 00078d: 41 08                      | i32.const 8
+ 00078f: 6a                         | i32.add
+ 000790: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 000796: 20 01                      | local.get 1
+ 000798: 41 00                      | i32.const 0
+ 00079a: 36 02 00                   | i32.store 2 0
+ 00079d: 20 00                      | local.get 0
+ 00079f: 41 c8 80 80 80 00          | i32.const 72
+ 0007a5: 36 02 18                   | i32.store 2 24
+ 0007a8: 20 00                      | local.get 0
+ 0007aa: 42 01                      | i64.const 1
+ 0007ac: 37 02 0c                   | i64.store 2 12
+ 0007af: 20 00                      | local.get 0
+ 0007b1: 41 c0 80 80 80 00          | i32.const 64
+ 0007b7: 36 02 08                   | i32.store 2 8
+ 0007ba: 20 00                      | local.get 0
+ 0007bc: 41 08                      | i32.const 8
+ 0007be: 6a                         | i32.add
+ 0007bf: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 0007c5: 20 01                      | local.get 1
+ 0007c7: 41 00                      | i32.const 0
+ 0007c9: 36 02 00                   | i32.store 2 0
+ 0007cc: 20 00                      | local.get 0
+ 0007ce: 41 c8 80 80 80 00          | i32.const 72
+ 0007d4: 36 02 18                   | i32.store 2 24
+ 0007d7: 20 00                      | local.get 0
+ 0007d9: 42 01                      | i64.const 1
+ 0007db: 37 02 0c                   | i64.store 2 12
+ 0007de: 20 00                      | local.get 0
+ 0007e0: 41 c0 80 80 80 00          | i32.const 64
+ 0007e6: 36 02 08                   | i32.store 2 8
+ 0007e9: 20 00                      | local.get 0
+ 0007eb: 41 08                      | i32.const 8
+ 0007ed: 6a                         | i32.add
+ 0007ee: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 0007f4: 20 01                      | local.get 1
+ 0007f6: 41 00                      | i32.const 0
+ 0007f8: 36 02 00                   | i32.store 2 0
+ 0007fb: 20 00                      | local.get 0
+ 0007fd: 41 c8 80 80 80 00          | i32.const 72
+ 000803: 36 02 18                   | i32.store 2 24
+ 000806: 20 00                      | local.get 0
+ 000808: 42 01                      | i64.const 1
+ 00080a: 37 02 0c                   | i64.store 2 12
+ 00080d: 20 00                      | local.get 0
+ 00080f: 41 c0 80 80 80 00          | i32.const 64
+ 000815: 36 02 08                   | i32.store 2 8
+ 000818: 20 00                      | local.get 0
+ 00081a: 41 08                      | i32.const 8
+ 00081c: 6a                         | i32.add
+ 00081d: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 000823: 20 01                      | local.get 1
+ 000825: 41 00                      | i32.const 0
+ 000827: 36 02 00                   | i32.store 2 0
+ 00082a: 20 00                      | local.get 0
+ 00082c: 41 c8 80 80 80 00          | i32.const 72
+ 000832: 36 02 18                   | i32.store 2 24
+ 000835: 20 00                      | local.get 0
+ 000837: 42 01                      | i64.const 1
+ 000839: 37 02 0c                   | i64.store 2 12
+ 00083c: 20 00                      | local.get 0
+ 00083e: 41 c0 80 80 80 00          | i32.const 64
+ 000844: 36 02 08                   | i32.store 2 8
+ 000847: 20 00                      | local.get 0
+ 000849: 41 08                      | i32.const 8
+ 00084b: 6a                         | i32.add
+ 00084c: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 000852: 20 01                      | local.get 1
+ 000854: 41 00                      | i32.const 0
+ 000856: 36 02 00                   | i32.store 2 0
+ 000859: 20 00                      | local.get 0
+ 00085b: 41 c8 80 80 80 00          | i32.const 72
+ 000861: 36 02 18                   | i32.store 2 24
+ 000864: 20 00                      | local.get 0
+ 000866: 42 01                      | i64.const 1
+ 000868: 37 02 0c                   | i64.store 2 12
+ 00086b: 20 00                      | local.get 0
+ 00086d: 41 c0 80 80 80 00          | i32.const 64
+ 000873: 36 02 08                   | i32.store 2 8
+ 000876: 20 00                      | local.get 0
+ 000878: 41 08                      | i32.const 8
+ 00087a: 6a                         | i32.add
+ 00087b: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 000881: 20 01                      | local.get 1
+ 000883: 41 00                      | i32.const 0
+ 000885: 36 02 00                   | i32.store 2 0
+ 000888: 20 00                      | local.get 0
+ 00088a: 41 c8 80 80 80 00          | i32.const 72
+ 000890: 36 02 18                   | i32.store 2 24
+ 000893: 20 00                      | local.get 0
+ 000895: 42 01                      | i64.const 1
+ 000897: 37 02 0c                   | i64.store 2 12
+ 00089a: 20 00                      | local.get 0
+ 00089c: 41 c0 80 80 80 00          | i32.const 64
+ 0008a2: 36 02 08                   | i32.store 2 8
+ 0008a5: 23 80 80 80 80 00          | global.get 0 <env.__tls_base>
+ 0008ab: 21 02                      | local.set 2
+ 0008ad: 20 00                      | local.get 0
+ 0008af: 41 08                      | i32.const 8
+ 0008b1: 6a                         | i32.add
+ 0008b2: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 0008b8: 02 40                      | block
+ 0008ba: 02 40                      |   block
+ 0008bc: 20 02                      |     local.get 2
+ 0008be: 41 d4 81 80 80 00          |     i32.const 212
+ 0008c4: 6a                         |     i32.add
+ 0008c5: 22 02                      |     local.tee 2
+ 0008c7: 28 02 00                   |     i32.load 2 0
+ 0008ca: 41 01                      |     i32.const 1
+ 0008cc: 47                         |     i32.ne
+ 0008cd: 0d 00                      |     br_if 0
+ 0008cf: 20 02                      |     local.get 2
+ 0008d1: 41 04                      |     i32.const 4
+ 0008d3: 6a                         |     i32.add
+ 0008d4: 21 02                      |     local.set 2
+ 0008d6: 0c 01                      |     br 1
+ 0008d8: 0b                         |   end
+ 0008d9: 23 80 80 80 80 00          |   global.get 0 <env.__tls_base>
+ 0008df: 41 d4 81 80 80 00          |   i32.const 212
+ 0008e5: 6a                         |   i32.add
+ 0008e6: 10 89 80 80 80 00          |   call 9 <env.std::thread::local::fast::Key<T>::try_initialize>
+ 0008ec: 21 02                      |   local.set 2
+ 0008ee: 0b                         | end
+ 0008ef: 20 01                      | local.get 1
+ 0008f1: 41 01                      | i32.const 1
+ 0008f3: 36 02 00                   | i32.store 2 0
+ 0008f6: 20 00                      | local.get 0
+ 0008f8: 42 02                      | i64.const 2
+ 0008fa: 37 02 0c                   | i64.store 2 12
+ 0008fd: 20 00                      | local.get 0
+ 0008ff: 41 dc 80 80 80 00          | i32.const 92
+ 000905: 36 02 08                   | i32.store 2 8
+ 000908: 20 02                      | local.get 2
+ 00090a: 28 02 00                   | i32.load 2 0
+ 00090d: 21 01                      | local.set 1
+ 00090f: 20 00                      | local.get 0
+ 000911: 41 83 80 80 80 00          | i32.const 3
+ 000917: 36 02 24                   | i32.store 2 36
+ 00091a: 20 00                      | local.get 0
+ 00091c: 20 01                      | local.get 1
+ 00091e: 36 02 2c                   | i32.store 2 44
+ 000921: 20 00                      | local.get 0
+ 000923: 20 00                      | local.get 0
+ 000925: 41 20                      | i32.const 32
+ 000927: 6a                         | i32.add
+ 000928: 36 02 18                   | i32.store 2 24
+ 00092b: 20 00                      | local.get 0
+ 00092d: 20 00                      | local.get 0
+ 00092f: 41 2c                      | i32.const 44
+ 000931: 6a                         | i32.add
+ 000932: 36 02 20                   | i32.store 2 32
+ 000935: 20 00                      | local.get 0
+ 000937: 41 08                      | i32.const 8
+ 000939: 6a                         | i32.add
+ 00093a: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 000940: 20 00                      | local.get 0
+ 000942: 41 30                      | i32.const 48
+ 000944: 6a                         | i32.add
+ 000945: 24 81 80 80 80 00          | global.set 1 <env.__stack_pointer>
+ 00094b: 0b                         | end
+00094e func[24] <tls::main>:
+ 00094f: 04 7f                      | local[0..3] type=i32
+ 000951: 23 81 80 80 80 00          | global.get 1 <env.__stack_pointer>
+ 000957: 41 c0 00                   | i32.const 64
+ 00095a: 6b                         | i32.sub
+ 00095b: 22 00                      | local.tee 0
+ 00095d: 24 81 80 80 80 00          | global.set 1 <env.__stack_pointer>
+ 000963: 02 40                      | block
+ 000965: 02 40                      |   block
+ 000967: 23 80 80 80 80 00          |     global.get 0 <env.__tls_base>
+ 00096d: 41 d4 81 80 80 00          |     i32.const 212
+ 000973: 6a                         |     i32.add
+ 000974: 22 01                      |     local.tee 1
+ 000976: 28 02 00                   |     i32.load 2 0
+ 000979: 41 01                      |     i32.const 1
+ 00097b: 47                         |     i32.ne
+ 00097c: 0d 00                      |     br_if 0
+ 00097e: 20 01                      |     local.get 1
+ 000980: 41 04                      |     i32.const 4
+ 000982: 6a                         |     i32.add
+ 000983: 21 01                      |     local.set 1
+ 000985: 0c 01                      |     br 1
+ 000987: 0b                         |   end
+ 000988: 23 80 80 80 80 00          |   global.get 0 <env.__tls_base>
+ 00098e: 41 d4 81 80 80 00          |   i32.const 212
+ 000994: 6a                         |   i32.add
+ 000995: 10 89 80 80 80 00          |   call 9 <env.std::thread::local::fast::Key<T>::try_initialize>
+ 00099b: 21 01                      |   local.set 1
+ 00099d: 0b                         | end
+ 00099e: 20 00                      | local.get 0
+ 0009a0: 41 2c                      | i32.const 44
+ 0009a2: 6a                         | i32.add
+ 0009a3: 41 01                      | i32.const 1
+ 0009a5: 36 02 00                   | i32.store 2 0
+ 0009a8: 20 00                      | local.get 0
+ 0009aa: 42 02                      | i64.const 2
+ 0009ac: 37 02 1c                   | i64.store 2 28
+ 0009af: 20 00                      | local.get 0
+ 0009b1: 41 84 81 80 80 00          | i32.const 132
+ 0009b7: 36 02 18                   | i32.store 2 24
+ 0009ba: 20 01                      | local.get 1
+ 0009bc: 28 02 00                   | i32.load 2 0
+ 0009bf: 21 01                      | local.set 1
+ 0009c1: 20 00                      | local.get 0
+ 0009c3: 41 83 80 80 80 00          | i32.const 3
+ 0009c9: 36 02 0c                   | i32.store 2 12
+ 0009cc: 20 00                      | local.get 0
+ 0009ce: 20 01                      | local.get 1
+ 0009d0: 36 02 30                   | i32.store 2 48
+ 0009d3: 23 80 80 80 80 00          | global.get 0 <env.__tls_base>
+ 0009d9: 21 01                      | local.set 1
+ 0009db: 20 00                      | local.get 0
+ 0009dd: 20 00                      | local.get 0
+ 0009df: 41 08                      | i32.const 8
+ 0009e1: 6a                         | i32.add
+ 0009e2: 36 02 28                   | i32.store 2 40
+ 0009e5: 20 00                      | local.get 0
+ 0009e7: 20 00                      | local.get 0
+ 0009e9: 41 30                      | i32.const 48
+ 0009eb: 6a                         | i32.add
+ 0009ec: 36 02 08                   | i32.store 2 8
+ 0009ef: 20 00                      | local.get 0
+ 0009f1: 41 18                      | i32.const 24
+ 0009f3: 6a                         | i32.add
+ 0009f4: 10 88 80 80 80 00          | call 8 <env.std::io::stdio::_print>
+ 0009fa: 20 00                      | local.get 0
+ 0009fc: 41 08                      | i32.const 8
+ 0009fe: 6a                         | i32.add
+ 0009ff: 10 8b 80 80 80 00          | call 11 <env.std::thread::spawn>
+ 000a05: 02 40                      | block
+ 000a07: 02 40                      |   block
+ 000a09: 02 40                      |     block
+ 000a0b: 02 40                      |       block
+ 000a0d: 02 40                      |         block
+ 000a0f: 20 01                      |           local.get 1
+ 000a11: 41 d4 81 80 80 00          |           i32.const 212
+ 000a17: 6a                         |           i32.add
+ 000a18: 22 01                      |           local.tee 1
+ 000a1a: 28 02 00                   |           i32.load 2 0
+ 000a1d: 41 01                      |           i32.const 1
+ 000a1f: 47                         |           i32.ne
+ 000a20: 0d 00                      |           br_if 0
+ 000a22: 20 01                      |           local.get 1
+ 000a24: 41 04                      |           i32.const 4
+ 000a26: 6a                         |           i32.add
+ 000a27: 21 01                      |           local.set 1
+ 000a29: 0c 01                      |           br 1
+ 000a2b: 0b                         |         end
+ 000a2c: 23 80 80 80 80 00          |         global.get 0 <env.__tls_base>
+ 000a32: 22 01                      |         local.tee 1
+ 000a34: 41 80 80 80 80 00          |         i32.const 0
+ 000a3a: 6a                         |         i32.add
+ 000a3b: 22 02                      |         local.tee 2
+ 000a3d: 41 00                      |         i32.const 0
+ 000a3f: 36 02 00                   |         i32.store 2 0
+ 000a42: 41 84 80 80 80 00          |         i32.const 4
+ 000a48: 20 01                      |         local.get 1
+ 000a4a: 41 d4 81 80 80 00          |         i32.const 212
+ 000a50: 6a                         |         i32.add
+ 000a51: 10 8c 80 80 80 00          |         call 12 <invoke_ii>
+ 000a57: 21 01                      |         local.set 1
+ 000a59: 20 02                      |         local.get 2
+ 000a5b: 28 02 00                   |         i32.load 2 0
+ 000a5e: 21 03                      |         local.set 3
+ 000a60: 20 02                      |         local.get 2
+ 000a62: 41 00                      |         i32.const 0
+ 000a64: 36 02 00                   |         i32.store 2 0
+ 000a67: 20 03                      |         local.get 3
+ 000a69: 41 01                      |         i32.const 1
+ 000a6b: 46                         |         i32.eq
+ 000a6c: 0d 01                      |         br_if 1
+ 000a6e: 0b                         |       end
+ 000a6f: 20 01                      |       local.get 1
+ 000a71: 41 02                      |       i32.const 2
+ 000a73: 36 02 00                   |       i32.store 2 0
+ 000a76: 02 40                      |       block
+ 000a78: 02 40                      |         block
+ 000a7a: 23 80 80 80 80 00          |           global.get 0 <env.__tls_base>
+ 000a80: 41 d4 81 80 80 00          |           i32.const 212
+ 000a86: 6a                         |           i32.add
+ 000a87: 22 01                      |           local.tee 1
+ 000a89: 28 02 00                   |           i32.load 2 0
+ 000a8c: 41 01                      |           i32.const 1
+ 000a8e: 47                         |           i32.ne
+ 000a8f: 0d 00                      |           br_if 0
+ 000a91: 20 01                      |           local.get 1
+ 000a93: 41 04                      |           i32.const 4
+ 000a95: 6a                         |           i32.add
+ 000a96: 21 01                      |           local.set 1
+ 000a98: 0c 01                      |           br 1
+ 000a9a: 0b                         |         end
+ 000a9b: 23 80 80 80 80 00          |         global.get 0 <env.__tls_base>
+ 000aa1: 22 01                      |         local.tee 1
+ 000aa3: 41 80 80 80 80 00          |         i32.const 0
+ 000aa9: 6a                         |         i32.add
+ 000aaa: 22 02                      |         local.tee 2
+ 000aac: 41 00                      |         i32.const 0
+ 000aae: 36 02 00                   |         i32.store 2 0
+ 000ab1: 41 84 80 80 80 00          |         i32.const 4
+ 000ab7: 20 01                      |         local.get 1
+ 000ab9: 41 d4 81 80 80 00          |         i32.const 212
+ 000abf: 6a                         |         i32.add
+ 000ac0: 10 8c 80 80 80 00          |         call 12 <invoke_ii>
+ 000ac6: 21 01                      |         local.set 1
+ 000ac8: 20 02                      |         local.get 2
+ 000aca: 28 02 00                   |         i32.load 2 0
+ 000acd: 21 03                      |         local.set 3
+ 000acf: 20 02                      |         local.get 2
+ 000ad1: 41 00                      |         i32.const 0
+ 000ad3: 36 02 00                   |         i32.store 2 0
+ 000ad6: 20 03                      |         local.get 3
+ 000ad8: 41 01                      |         i32.const 1
+ 000ada: 46                         |         i32.eq
+ 000adb: 0d 01                      |         br_if 1
+ 000add: 0b                         |       end
+ 000ade: 20 00                      |       local.get 0
+ 000ae0: 41 2c                      |       i32.const 44
+ 000ae2: 6a                         |       i32.add
+ 000ae3: 41 01                      |       i32.const 1
+ 000ae5: 36 02 00                   |       i32.store 2 0
+ 000ae8: 23 80 80 80 80 00          |       global.get 0 <env.__tls_base>
+ 000aee: 21 02                      |       local.set 2
+ 000af0: 20 01                      |       local.get 1
+ 000af2: 28 02 00                   |       i32.load 2 0
+ 000af5: 21 03                      |       local.set 3
+ 000af7: 20 02                      |       local.get 2
+ 000af9: 41 80 80 80 80 00          |       i32.const 0
+ 000aff: 6a                         |       i32.add
+ 000b00: 22 01                      |       local.tee 1
+ 000b02: 41 00                      |       i32.const 0
+ 000b04: 36 02 00                   |       i32.store 2 0
+ 000b07: 20 00                      |       local.get 0
+ 000b09: 42 02                      |       i64.const 2
+ 000b0b: 37 02 1c                   |       i64.store 2 28
+ 000b0e: 20 00                      |       local.get 0
+ 000b10: 41 a8 81 80 80 00          |       i32.const 168
+ 000b16: 36 02 18                   |       i32.store 2 24
+ 000b19: 20 00                      |       local.get 0
+ 000b1b: 41 83 80 80 80 00          |       i32.const 3
+ 000b21: 36 02 34                   |       i32.store 2 52
+ 000b24: 20 00                      |       local.get 0
+ 000b26: 20 03                      |       local.get 3
+ 000b28: 36 02 3c                   |       i32.store 2 60
+ 000b2b: 20 00                      |       local.get 0
+ 000b2d: 20 00                      |       local.get 0
+ 000b2f: 41 30                      |       i32.const 48
+ 000b31: 6a                         |       i32.add
+ 000b32: 36 02 28                   |       i32.store 2 40
+ 000b35: 20 00                      |       local.get 0
+ 000b37: 20 00                      |       local.get 0
+ 000b39: 41 3c                      |       i32.const 60
+ 000b3b: 6a                         |       i32.add
+ 000b3c: 36 02 30                   |       i32.store 2 48
+ 000b3f: 41 85 80 80 80 00          |       i32.const 5
+ 000b45: 20 00                      |       local.get 0
+ 000b47: 41 18                      |       i32.const 24
+ 000b49: 6a                         |       i32.add
+ 000b4a: 10 83 80 80 80 00          |       call 3 <invoke_vi>
+ 000b50: 20 01                      |       local.get 1
+ 000b52: 28 02 00                   |       i32.load 2 0
+ 000b55: 21 02                      |       local.set 2
+ 000b57: 20 01                      |       local.get 1
+ 000b59: 41 00                      |       i32.const 0
+ 000b5b: 36 02 00                   |       i32.store 2 0
+ 000b5e: 20 02                      |       local.get 2
+ 000b60: 41 01                      |       i32.const 1
+ 000b62: 46                         |       i32.eq
+ 000b63: 0d 00                      |       br_if 0
+ 000b65: 20 00                      |       local.get 0
+ 000b67: 41 18                      |       i32.const 24
+ 000b69: 6a                         |       i32.add
+ 000b6a: 41 08                      |       i32.const 8
+ 000b6c: 6a                         |       i32.add
+ 000b6d: 20 00                      |       local.get 0
+ 000b6f: 41 08                      |       i32.const 8
+ 000b71: 6a                         |       i32.add
+ 000b72: 41 08                      |       i32.const 8
+ 000b74: 6a                         |       i32.add
+ 000b75: 29 03 00                   |       i64.load 3 0
+ 000b78: 37 03 00                   |       i64.store 3 0
+ 000b7b: 20 00                      |       local.get 0
+ 000b7d: 20 00                      |       local.get 0
+ 000b7f: 29 03 08                   |       i64.load 3 8
+ 000b82: 37 03 18                   |       i64.store 3 24
+ 000b85: 20 00                      |       local.get 0
+ 000b87: 20 00                      |       local.get 0
+ 000b89: 41 18                      |       i32.const 24
+ 000b8b: 6a                         |       i32.add
+ 000b8c: 10 8d 80 80 80 00          |       call 13 <env.std::thread::JoinHandle<T>::join>
+ 000b92: 20 00                      |       local.get 0
+ 000b94: 28 02 00                   |       i32.load 2 0
+ 000b97: 22 01                      |       local.tee 1
+ 000b99: 45                         |       i32.eqz
+ 000b9a: 0d 02                      |       br_if 2
+ 000b9c: 20 00                      |       local.get 0
+ 000b9e: 28 02 04                   |       i32.load 2 4
+ 000ba1: 21 03                      |       local.set 3
+ 000ba3: 23 80 80 80 80 00          |       global.get 0 <env.__tls_base>
+ 000ba9: 41 80 80 80 80 00          |       i32.const 0
+ 000baf: 6a                         |       i32.add
+ 000bb0: 22 02                      |       local.tee 2
+ 000bb2: 41 00                      |       i32.const 0
+ 000bb4: 36 02 00                   |       i32.store 2 0
+ 000bb7: 20 00                      |       local.get 0
+ 000bb9: 20 03                      |       local.get 3
+ 000bbb: 36 02 1c                   |       i32.store 2 28
+ 000bbe: 20 00                      |       local.get 0
+ 000bc0: 20 01                      |       local.get 1
+ 000bc2: 36 02 18                   |       i32.store 2 24
+ 000bc5: 41 86 80 80 80 00          |       i32.const 6
+ 000bcb: 41 80 80 80 80 00          |       i32.const 0
+ 000bd1: 41 2b                      |       i32.const 43
+ 000bd3: 20 00                      |       local.get 0
+ 000bd5: 41 18                      |       i32.const 24
+ 000bd7: 6a                         |       i32.add
+ 000bd8: 41 ac 80 80 80 00          |       i32.const 44
+ 000bde: 41 c4 81 80 80 00          |       i32.const 196
+ 000be4: 10 8f 80 80 80 00          |       call 15 <invoke_viiiii>
+ 000bea: 20 02                      |       local.get 2
+ 000bec: 28 02 00                   |       i32.load 2 0
+ 000bef: 21 01                      |       local.set 1
+ 000bf1: 20 02                      |       local.get 2
+ 000bf3: 41 00                      |       i32.const 0
+ 000bf5: 36 02 00                   |       i32.store 2 0
+ 000bf8: 20 01                      |       local.get 1
+ 000bfa: 41 01                      |       i32.const 1
+ 000bfc: 47                         |       i32.ne
+ 000bfd: 0d 01                      |       br_if 1
+ 000bff: 10 84 80 80 80 00          |       call 4 <__cxa_find_matching_catch_2>
+ 000c05: 21 01                      |       local.set 1
+ 000c07: 10 85 80 80 80 00          |       call 5 <getTempRet0>
+ 000c0d: 1a                         |       drop
+ 000c0e: 20 00                      |       local.get 0
+ 000c10: 41 18                      |       i32.const 24
+ 000c12: 6a                         |       i32.add
+ 000c13: 10 95 80 80 80 00          |       call 21 <core::ptr::drop_in_place<alloc::boxed::Box<dyn core::any::Any+core::marker::Send>>>
+ 000c19: 20 01                      |       local.get 1
+ 000c1b: 10 86 80 80 80 00          |       call 6 <__resumeException>
+ 000c21: 00                         |       unreachable
+ 000c22: 0b                         |     end
+ 000c23: 10 84 80 80 80 00          |     call 4 <__cxa_find_matching_catch_2>
+ 000c29: 21 01                      |     local.set 1
+ 000c2b: 10 85 80 80 80 00          |     call 5 <getTempRet0>
+ 000c31: 1a                         |     drop
+ 000c32: 20 00                      |     local.get 0
+ 000c34: 41 08                      |     i32.const 8
+ 000c36: 6a                         |     i32.add
+ 000c37: 10 94 80 80 80 00          |     call 20 <core::ptr::drop_in_place<std::thread::JoinHandle<()>>>
+ 000c3d: 20 01                      |     local.get 1
+ 000c3f: 10 86 80 80 80 00          |     call 6 <__resumeException>
+ 000c45: 00                         |     unreachable
+ 000c46: 0b                         |   end
+ 000c47: 00                         |   unreachable
+ 000c48: 0b                         | end
+ 000c49: 20 00                      | local.get 0
+ 000c4b: 41 c0 00                   | i32.const 64
+ 000c4e: 6a                         | i32.add
+ 000c4f: 24 81 80 80 80 00          | global.set 1 <env.__stack_pointer>
+ 000c55: 0b                         | end
+000c57 func[25] <main>:
+ 000c58: 01 7f                      | local[0] type=i32
+ 000c5a: 23 81 80 80 80 00          | global.get 1 <env.__stack_pointer>
+ 000c60: 41 10                      | i32.const 16
+ 000c62: 6b                         | i32.sub
+ 000c63: 22 02                      | local.tee 2
+ 000c65: 24 81 80 80 80 00          | global.set 1 <env.__stack_pointer>
+ 000c6b: 20 02                      | local.get 2
+ 000c6d: 41 87 80 80 80 00          | i32.const 7
+ 000c73: 36 02 0c                   | i32.store 2 12
+ 000c76: 20 02                      | local.get 2
+ 000c78: 41 0c                      | i32.const 12
+ 000c7a: 6a                         | i32.add
+ 000c7b: 41 80 80 80 80 00          | i32.const 0
+ 000c81: 20 00                      | local.get 0
+ 000c83: 20 01                      | local.get 1
+ 000c85: 10 90 80 80 80 00          | call 16 <env.std::rt::lang_start_internal>
+ 000c8b: 21 00                      | local.set 0
+ 000c8d: 20 02                      | local.get 2
+ 000c8f: 41 10                      | i32.const 16
+ 000c91: 6a                         | i32.add
+ 000c92: 24 81 80 80 80 00          | global.set 1 <env.__stack_pointer>
+ 000c98: 20 00                      | local.get 0
+ 000c9a: 0b                         | end
