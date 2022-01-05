@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "tls"
+name = "Example"
 version = "0.1.0"

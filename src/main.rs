@@ -1,7 +1,7 @@
 use std::cell::Cell;
 use std::thread;
 
-thread_local! { static VAR1: Cell<i32> = Cell::new(1); }
+thread_local! { static VAR1: Cell<i32> = Cell::new(11111); }
 
 fn xs() {
     for _ in 0 .. 10 { println!("X"); }
@@ -13,7 +13,7 @@ fn main() {
     println!("VAR1 in main before: {}",VAR1.with(|v| {v.get()}));
 
     let t1 = thread::spawn(xs);
-    VAR1.with(|v| {v.set(2)});
+    VAR1.with(|v| {v.set(22222)});
     println!("VAR1 in main after: {}",VAR1.with(|v| {v.get()}));
 
     t1.join().unwrap();

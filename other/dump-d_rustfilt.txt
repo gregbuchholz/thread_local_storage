@@ -1,0 +1,949 @@
+
+Example.1b0wam0nd5eghoka.rcgu.o:	file format wasm 0x1
+
+Code Disassembly:
+
+000687 func[25] <Example::xs>:
+ 000688: 39 7f                      | local[0..56] type=i32
+ 00068a: 23 80 80 80 80 00          | global.get 0 <env.__stack_pointer>
+           00068b: R_WASM_GLOBAL_INDEX_LEB 1 <env.__stack_pointer>
+ 000690: 21 00                      | local.set 0
+ 000692: 41 80 01                   | i32.const 128
+ 000695: 21 01                      | local.set 1
+ 000697: 20 00                      | local.get 0
+ 000699: 20 01                      | local.get 1
+ 00069b: 6b                         | i32.sub
+ 00069c: 21 02                      | local.set 2
+ 00069e: 20 02                      | local.get 2
+ 0006a0: 24 80 80 80 80 00          | global.set 0 <env.__stack_pointer>
+           0006a1: R_WASM_GLOBAL_INDEX_LEB 1 <env.__stack_pointer>
+ 0006a6: 41 00                      | i32.const 0
+ 0006a8: 21 03                      | local.set 3
+ 0006aa: 20 02                      | local.get 2
+ 0006ac: 20 03                      | local.get 3
+ 0006ae: 36 02 20                   | i32.store 2 32
+ 0006b1: 41 0a                      | i32.const 10
+ 0006b3: 21 04                      | local.set 4
+ 0006b5: 20 02                      | local.get 2
+ 0006b7: 20 04                      | local.get 4
+ 0006b9: 36 02 24                   | i32.store 2 36
+ 0006bc: 20 02                      | local.get 2
+ 0006be: 28 02 20                   | i32.load 2 32
+ 0006c1: 21 05                      | local.set 5
+ 0006c3: 20 02                      | local.get 2
+ 0006c5: 28 02 24                   | i32.load 2 36
+ 0006c8: 21 06                      | local.set 6
+ 0006ca: 41 18                      | i32.const 24
+ 0006cc: 21 07                      | local.set 7
+ 0006ce: 20 02                      | local.get 2
+ 0006d0: 20 07                      | local.get 7
+ 0006d2: 6a                         | i32.add
+ 0006d3: 21 08                      | local.set 8
+ 0006d5: 20 08                      | local.get 8
+ 0006d7: 20 05                      | local.get 5
+ 0006d9: 20 06                      | local.get 6
+ 0006db: 10 80 80 80 80 00          | call 0 <env.<I as core::iter::traits::collect::IntoIterator>::into_iter>
+           0006dc: R_WASM_FUNCTION_INDEX_LEB 2 <env.<I as core::iter::traits::collect::IntoIterator>::into_iter>
+ 0006e1: 20 02                      | local.get 2
+ 0006e3: 28 02 1c                   | i32.load 2 28
+ 0006e6: 21 09                      | local.set 9
+ 0006e8: 20 02                      | local.get 2
+ 0006ea: 28 02 18                   | i32.load 2 24
+ 0006ed: 21 0a                      | local.set 10
+ 0006ef: 20 02                      | local.get 2
+ 0006f1: 20 0a                      | local.get 10
+ 0006f3: 36 02 28                   | i32.store 2 40
+ 0006f6: 20 02                      | local.get 2
+ 0006f8: 20 09                      | local.get 9
+ 0006fa: 36 02 2c                   | i32.store 2 44
+ 0006fd: 03 40                      | loop
+ 0006ff: 41 10                      |   i32.const 16
+ 000701: 21 0b                      |   local.set 11
+ 000703: 20 02                      |   local.get 2
+ 000705: 20 0b                      |   local.get 11
+ 000707: 6a                         |   i32.add
+ 000708: 21 0c                      |   local.set 12
+ 00070a: 41 28                      |   i32.const 40
+ 00070c: 21 0d                      |   local.set 13
+ 00070e: 20 02                      |   local.get 2
+ 000710: 20 0d                      |   local.get 13
+ 000712: 6a                         |   i32.add
+ 000713: 21 0e                      |   local.set 14
+ 000715: 20 0c                      |   local.get 12
+ 000717: 20 0e                      |   local.get 14
+ 000719: 10 81 80 80 80 00          |   call 1 <env.core::iter::range::<impl core::iter::traits::iterator::Iterator for core::ops::range::Range<A>>::next>
+           00071a: R_WASM_FUNCTION_INDEX_LEB 3 <env.core::iter::range::<impl core::iter::traits::iterator::Iterator for core::ops::range::Range<A>>::next>
+ 00071f: 20 02                      |   local.get 2
+ 000721: 28 02 10                   |   i32.load 2 16
+ 000724: 21 0f                      |   local.set 15
+ 000726: 20 02                      |   local.get 2
+ 000728: 28 02 14                   |   i32.load 2 20
+ 00072b: 21 10                      |   local.set 16
+ 00072d: 20 02                      |   local.get 2
+ 00072f: 20 10                      |   local.get 16
+ 000731: 36 02 34                   |   i32.store 2 52
+ 000734: 20 02                      |   local.get 2
+ 000736: 20 0f                      |   local.get 15
+ 000738: 36 02 30                   |   i32.store 2 48
+ 00073b: 20 02                      |   local.get 2
+ 00073d: 28 02 30                   |   i32.load 2 48
+ 000740: 21 11                      |   local.set 17
+ 000742: 02 40                      |   block
+ 000744: 02 40                      |     block
+ 000746: 02 40                      |       block
+ 000748: 20 11                      |         local.get 17
+ 00074a: 0e 02 00 01 00             |         br_table 0 1 0
+ 00074f: 0b                         |       end
+ 000750: 41 b0 80 80 80 00          |       i32.const 48
+           000751: R_WASM_MEMORY_ADDR_SLEB 4 <.L__unnamed_1>
+ 000756: 21 12                      |       local.set 18
+ 000758: 20 12                      |       local.get 18
+ 00075a: 21 13                      |       local.set 19
+ 00075c: 20 13                      |       local.get 19
+ 00075e: 10 82 80 80 80 00          |       call 2 <env.std::thread::local::LocalKey<T>::with>
+           00075f: R_WASM_FUNCTION_INDEX_LEB 5 <env.std::thread::local::LocalKey<T>::with>
+ 000764: 21 14                      |       local.set 20
+ 000766: 20 02                      |       local.get 2
+ 000768: 20 14                      |       local.get 20
+ 00076a: 36 02 74                   |       i32.store 2 116
+ 00076d: 0c 01                      |       br 1
+ 00076f: 0b                         |     end
+ 000770: 41 38                      |     i32.const 56
+ 000772: 21 15                      |     local.set 21
+ 000774: 20 02                      |     local.get 2
+ 000776: 20 15                      |     local.get 21
+ 000778: 6a                         |     i32.add
+ 000779: 21 16                      |     local.set 22
+ 00077b: 20 16                      |     local.get 22
+ 00077d: 21 17                      |     local.set 23
+ 00077f: 41 84 80 80 80 00          |     i32.const 4
+           000780: R_WASM_MEMORY_ADDR_SLEB 6 <.L__unnamed_2>
+ 000785: 21 18                      |     local.set 24
+ 000787: 20 18                      |     local.get 24
+ 000789: 21 19                      |     local.set 25
+ 00078b: 41 01                      |     i32.const 1
+ 00078d: 21 1a                      |     local.set 26
+ 00078f: 41 8c 80 80 80 00          |     i32.const 12
+           000790: R_WASM_MEMORY_ADDR_SLEB 7 <.L__unnamed_3>
+ 000795: 21 1b                      |     local.set 27
+ 000797: 20 1b                      |     local.get 27
+ 000799: 21 1c                      |     local.set 28
+ 00079b: 41 00                      |     i32.const 0
+ 00079d: 21 1d                      |     local.set 29
+ 00079f: 20 17                      |     local.get 23
+ 0007a1: 20 19                      |     local.get 25
+ 0007a3: 20 1a                      |     local.get 26
+ 0007a5: 20 1c                      |     local.get 28
+ 0007a7: 20 1d                      |     local.get 29
+ 0007a9: 10 83 80 80 80 00          |     call 3 <env.core::fmt::Arguments::new_v1>
+           0007aa: R_WASM_FUNCTION_INDEX_LEB 8 <env.core::fmt::Arguments::new_v1>
+ 0007af: 41 38                      |     i32.const 56
+ 0007b1: 21 1e                      |     local.set 30
+ 0007b3: 20 02                      |     local.get 2
+ 0007b5: 20 1e                      |     local.get 30
+ 0007b7: 6a                         |     i32.add
+ 0007b8: 21 1f                      |     local.set 31
+ 0007ba: 20 1f                      |     local.get 31
+ 0007bc: 21 20                      |     local.set 32
+ 0007be: 20 20                      |     local.get 32
+ 0007c0: 10 84 80 80 80 00          |     call 4 <env.std::io::stdio::_print>
+           0007c1: R_WASM_FUNCTION_INDEX_LEB 9 <env.std::io::stdio::_print>
+ 0007c6: 0c 01                      |     br 1
+ 0007c8: 0b                         |   end
+ 0007c9: 0b                         | end
+ 0007ca: 41 f4 00                   | i32.const 116
+ 0007cd: 21 21                      | local.set 33
+ 0007cf: 20 02                      | local.get 2
+ 0007d1: 20 21                      | local.get 33
+ 0007d3: 6a                         | i32.add
+ 0007d4: 21 22                      | local.set 34
+ 0007d6: 20 22                      | local.get 34
+ 0007d8: 21 23                      | local.set 35
+ 0007da: 20 02                      | local.get 2
+ 0007dc: 20 23                      | local.get 35
+ 0007de: 36 02 70                   | i32.store 2 112
+ 0007e1: 20 02                      | local.get 2
+ 0007e3: 28 02 70                   | i32.load 2 112
+ 0007e6: 21 24                      | local.set 36
+ 0007e8: 20 02                      | local.get 2
+ 0007ea: 20 24                      | local.get 36
+ 0007ec: 36 02 7c                   | i32.store 2 124
+ 0007ef: 41 81 80 80 80 00          | i32.const 1
+           0007f0: R_WASM_TABLE_INDEX_SLEB 10 <env.core::fmt::num::imp::<impl core::fmt::Display for i32>::fmt>
+ 0007f5: 21 25                      | local.set 37
+ 0007f7: 41 08                      | i32.const 8
+ 0007f9: 21 26                      | local.set 38
+ 0007fb: 20 02                      | local.get 2
+ 0007fd: 20 26                      | local.get 38
+ 0007ff: 6a                         | i32.add
+ 000800: 21 27                      | local.set 39
+ 000802: 20 27                      | local.get 39
+ 000804: 20 24                      | local.get 36
+ 000806: 20 25                      | local.get 37
+ 000808: 10 86 80 80 80 00          | call 6 <env.core::fmt::ArgumentV1::new>
+           000809: R_WASM_FUNCTION_INDEX_LEB 11 <env.core::fmt::ArgumentV1::new>
+ 00080e: 20 02                      | local.get 2
+ 000810: 28 02 0c                   | i32.load 2 12
+ 000813: 21 28                      | local.set 40
+ 000815: 20 02                      | local.get 2
+ 000817: 28 02 08                   | i32.load 2 8
+ 00081a: 21 29                      | local.set 41
+ 00081c: 20 02                      | local.get 2
+ 00081e: 20 29                      | local.get 41
+ 000820: 36 02 68                   | i32.store 2 104
+ 000823: 20 02                      | local.get 2
+ 000825: 20 28                      | local.get 40
+ 000827: 36 02 6c                   | i32.store 2 108
+ 00082a: 41 e8 00                   | i32.const 104
+ 00082d: 21 2a                      | local.set 42
+ 00082f: 20 02                      | local.get 2
+ 000831: 20 2a                      | local.get 42
+ 000833: 6a                         | i32.add
+ 000834: 21 2b                      | local.set 43
+ 000836: 20 2b                      | local.get 43
+ 000838: 21 2c                      | local.set 44
+ 00083a: 41 d0 00                   | i32.const 80
+ 00083d: 21 2d                      | local.set 45
+ 00083f: 20 02                      | local.get 2
+ 000841: 20 2d                      | local.get 45
+ 000843: 6a                         | i32.add
+ 000844: 21 2e                      | local.set 46
+ 000846: 20 2e                      | local.get 46
+ 000848: 21 2f                      | local.set 47
+ 00084a: 41 a0 80 80 80 00          | i32.const 32
+           00084b: R_WASM_MEMORY_ADDR_SLEB 12 <.L__unnamed_4>
+ 000850: 21 30                      | local.set 48
+ 000852: 20 30                      | local.get 48
+ 000854: 21 31                      | local.set 49
+ 000856: 41 02                      | i32.const 2
+ 000858: 21 32                      | local.set 50
+ 00085a: 41 01                      | i32.const 1
+ 00085c: 21 33                      | local.set 51
+ 00085e: 20 2f                      | local.get 47
+ 000860: 20 31                      | local.get 49
+ 000862: 20 32                      | local.get 50
+ 000864: 20 2c                      | local.get 44
+ 000866: 20 33                      | local.get 51
+ 000868: 10 83 80 80 80 00          | call 3 <env.core::fmt::Arguments::new_v1>
+           000869: R_WASM_FUNCTION_INDEX_LEB 8 <env.core::fmt::Arguments::new_v1>
+ 00086e: 41 d0 00                   | i32.const 80
+ 000871: 21 34                      | local.set 52
+ 000873: 20 02                      | local.get 2
+ 000875: 20 34                      | local.get 52
+ 000877: 6a                         | i32.add
+ 000878: 21 35                      | local.set 53
+ 00087a: 20 35                      | local.get 53
+ 00087c: 21 36                      | local.set 54
+ 00087e: 20 36                      | local.get 54
+ 000880: 10 84 80 80 80 00          | call 4 <env.std::io::stdio::_print>
+           000881: R_WASM_FUNCTION_INDEX_LEB 9 <env.std::io::stdio::_print>
+ 000886: 41 80 01                   | i32.const 128
+ 000889: 21 37                      | local.set 55
+ 00088b: 20 02                      | local.get 2
+ 00088d: 20 37                      | local.get 55
+ 00088f: 6a                         | i32.add
+ 000890: 21 38                      | local.set 56
+ 000892: 20 38                      | local.get 56
+ 000894: 24 80 80 80 80 00          | global.set 0 <env.__stack_pointer>
+           000895: R_WASM_GLOBAL_INDEX_LEB 1 <env.__stack_pointer>
+ 00089a: 0f                         | return
+ 00089b: 00                         | unreachable
+ 00089c: 0b                         | end
+00089f func[26] <Example::main>:
+ 0008a0: 79 7f                      | local[0..120] type=i32
+ 0008a2: 02 7e                      | local[121..122] type=i64
+ 0008a4: 28 7f                      | local[123..162] type=i32
+ 0008a6: 23 80 80 80 80 00          | global.get 0 <env.__stack_pointer>
+           0008a7: R_WASM_GLOBAL_INDEX_LEB 1 <env.__stack_pointer>
+ 0008ac: 21 00                      | local.set 0
+ 0008ae: 41 a0 01                   | i32.const 160
+ 0008b1: 21 01                      | local.set 1
+ 0008b3: 20 00                      | local.get 0
+ 0008b5: 20 01                      | local.get 1
+ 0008b7: 6b                         | i32.sub
+ 0008b8: 21 02                      | local.set 2
+ 0008ba: 20 02                      | local.get 2
+ 0008bc: 24 80 80 80 80 00          | global.set 0 <env.__stack_pointer>
+           0008bd: R_WASM_GLOBAL_INDEX_LEB 1 <env.__stack_pointer>
+ 0008c2: 41 00                      | i32.const 0
+ 0008c4: 21 03                      | local.set 3
+ 0008c6: 20 02                      | local.get 2
+ 0008c8: 20 03                      | local.get 3
+ 0008ca: 3a 00 8b 01                | i32.store8 0 139
+ 0008ce: 41 b0 80 80 80 00          | i32.const 48
+           0008cf: R_WASM_MEMORY_ADDR_SLEB 4 <.L__unnamed_1>
+ 0008d4: 21 04                      | local.set 4
+ 0008d6: 20 04                      | local.get 4
+ 0008d8: 21 05                      | local.set 5
+ 0008da: 20 05                      | local.get 5
+ 0008dc: 10 87 80 80 80 00          | call 7 <env.std::thread::local::LocalKey<T>::with>
+           0008dd: R_WASM_FUNCTION_INDEX_LEB 14 <env.std::thread::local::LocalKey<T>::with>
+ 0008e2: 21 06                      | local.set 6
+ 0008e4: 20 02                      | local.get 2
+ 0008e6: 20 06                      | local.get 6
+ 0008e8: 36 02 3c                   | i32.store 2 60
+ 0008eb: 41 3c                      | i32.const 60
+ 0008ed: 21 07                      | local.set 7
+ 0008ef: 20 02                      | local.get 2
+ 0008f1: 20 07                      | local.get 7
+ 0008f3: 6a                         | i32.add
+ 0008f4: 21 08                      | local.set 8
+ 0008f6: 20 08                      | local.get 8
+ 0008f8: 21 09                      | local.set 9
+ 0008fa: 20 02                      | local.get 2
+ 0008fc: 20 09                      | local.get 9
+ 0008fe: 36 02 38                   | i32.store 2 56
+ 000901: 20 02                      | local.get 2
+ 000903: 28 02 38                   | i32.load 2 56
+ 000906: 21 0a                      | local.set 10
+ 000908: 20 02                      | local.get 2
+ 00090a: 20 0a                      | local.get 10
+ 00090c: 36 02 8c 01                | i32.store 2 140
+ 000910: 41 81 80 80 80 00          | i32.const 1
+           000911: R_WASM_TABLE_INDEX_SLEB 10 <env.core::fmt::num::imp::<impl core::fmt::Display for i32>::fmt>
+ 000916: 21 0b                      | local.set 11
+ 000918: 41 10                      | i32.const 16
+ 00091a: 21 0c                      | local.set 12
+ 00091c: 20 02                      | local.get 2
+ 00091e: 20 0c                      | local.get 12
+ 000920: 6a                         | i32.add
+ 000921: 21 0d                      | local.set 13
+ 000923: 20 0d                      | local.get 13
+ 000925: 20 0a                      | local.get 10
+ 000927: 20 0b                      | local.get 11
+ 000929: 10 86 80 80 80 00          | call 6 <env.core::fmt::ArgumentV1::new>
+           00092a: R_WASM_FUNCTION_INDEX_LEB 11 <env.core::fmt::ArgumentV1::new>
+ 00092f: 20 02                      | local.get 2
+ 000931: 28 02 14                   | i32.load 2 20
+ 000934: 21 0e                      | local.set 14
+ 000936: 20 02                      | local.get 2
+ 000938: 28 02 10                   | i32.load 2 16
+ 00093b: 21 0f                      | local.set 15
+ 00093d: 20 02                      | local.get 2
+ 00093f: 20 0f                      | local.get 15
+ 000941: 36 02 30                   | i32.store 2 48
+ 000944: 20 02                      | local.get 2
+ 000946: 20 0e                      | local.get 14
+ 000948: 36 02 34                   | i32.store 2 52
+ 00094b: 41 30                      | i32.const 48
+ 00094d: 21 10                      | local.set 16
+ 00094f: 20 02                      | local.get 2
+ 000951: 20 10                      | local.get 16
+ 000953: 6a                         | i32.add
+ 000954: 21 11                      | local.set 17
+ 000956: 20 11                      | local.get 17
+ 000958: 21 12                      | local.set 18
+ 00095a: 41 18                      | i32.const 24
+ 00095c: 21 13                      | local.set 19
+ 00095e: 20 02                      | local.get 2
+ 000960: 20 13                      | local.get 19
+ 000962: 6a                         | i32.add
+ 000963: 21 14                      | local.set 20
+ 000965: 20 14                      | local.get 20
+ 000967: 21 15                      | local.set 21
+ 000969: 41 cc 80 80 80 00          | i32.const 76
+           00096a: R_WASM_MEMORY_ADDR_SLEB 15 <.L__unnamed_5>
+ 00096f: 21 16                      | local.set 22
+ 000971: 20 16                      | local.get 22
+ 000973: 21 17                      | local.set 23
+ 000975: 41 02                      | i32.const 2
+ 000977: 21 18                      | local.set 24
+ 000979: 41 01                      | i32.const 1
+ 00097b: 21 19                      | local.set 25
+ 00097d: 20 15                      | local.get 21
+ 00097f: 20 17                      | local.get 23
+ 000981: 20 18                      | local.get 24
+ 000983: 20 12                      | local.get 18
+ 000985: 20 19                      | local.get 25
+ 000987: 10 83 80 80 80 00          | call 3 <env.core::fmt::Arguments::new_v1>
+           000988: R_WASM_FUNCTION_INDEX_LEB 8 <env.core::fmt::Arguments::new_v1>
+ 00098d: 41 18                      | i32.const 24
+ 00098f: 21 1a                      | local.set 26
+ 000991: 20 02                      | local.get 2
+ 000993: 20 1a                      | local.get 26
+ 000995: 6a                         | i32.add
+ 000996: 21 1b                      | local.set 27
+ 000998: 20 1b                      | local.get 27
+ 00099a: 21 1c                      | local.set 28
+ 00099c: 20 1c                      | local.get 28
+ 00099e: 10 84 80 80 80 00          | call 4 <env.std::io::stdio::_print>
+           00099f: R_WASM_FUNCTION_INDEX_LEB 9 <env.std::io::stdio::_print>
+ 0009a4: 41 01                      | i32.const 1
+ 0009a6: 21 1d                      | local.set 29
+ 0009a8: 20 02                      | local.get 2
+ 0009aa: 20 1d                      | local.get 29
+ 0009ac: 3a 00 8b 01                | i32.store8 0 139
+ 0009b0: 41 c0 00                   | i32.const 64
+ 0009b3: 21 1e                      | local.set 30
+ 0009b5: 20 02                      | local.get 2
+ 0009b7: 20 1e                      | local.get 30
+ 0009b9: 6a                         | i32.add
+ 0009ba: 21 1f                      | local.set 31
+ 0009bc: 20 1f                      | local.get 31
+ 0009be: 21 20                      | local.set 32
+ 0009c0: 20 20                      | local.get 32
+ 0009c2: 10 88 80 80 80 00          | call 8 <env.std::thread::spawn>
+           0009c3: R_WASM_FUNCTION_INDEX_LEB 16 <env.std::thread::spawn>
+ 0009c8: 41 80 80 80 80 00          | i32.const 0
+           0009c9: R_WASM_MEMORY_ADDR_TLS_SLEB 17 <__THREW__>
+ 0009ce: 21 21                      | local.set 33
+ 0009d0: 23 81 80 80 80 00          | global.get 1 <env.__tls_base>
+           0009d1: R_WASM_GLOBAL_INDEX_LEB 18 <env.__tls_base>
+ 0009d6: 21 22                      | local.set 34
+ 0009d8: 20 22                      | local.get 34
+ 0009da: 20 21                      | local.get 33
+ 0009dc: 6a                         | i32.add
+ 0009dd: 21 23                      | local.set 35
+ 0009df: 41 00                      | i32.const 0
+ 0009e1: 21 24                      | local.set 36
+ 0009e3: 20 23                      | local.get 35
+ 0009e5: 20 24                      | local.get 36
+ 0009e7: 36 02 00                   | i32.store 2 0
+ 0009ea: 41 b0 80 80 80 00          | i32.const 48
+           0009eb: R_WASM_MEMORY_ADDR_SLEB 4 <.L__unnamed_1>
+ 0009f0: 21 25                      | local.set 37
+ 0009f2: 41 82 80 80 80 00          | i32.const 2
+           0009f3: R_WASM_TABLE_INDEX_SLEB 19 <env.std::thread::local::LocalKey<T>::with>
+ 0009f8: 21 26                      | local.set 38
+ 0009fa: 20 26                      | local.get 38
+ 0009fc: 20 25                      | local.get 37
+ 0009fe: 10 8a 80 80 80 00          | call 10 <invoke_vi>
+           0009ff: R_WASM_FUNCTION_INDEX_LEB 20 <invoke_vi>
+ 000a04: 20 23                      | local.get 35
+ 000a06: 28 02 00                   | i32.load 2 0
+ 000a09: 21 27                      | local.set 39
+ 000a0b: 20 23                      | local.get 35
+ 000a0d: 20 24                      | local.get 36
+ 000a0f: 36 02 00                   | i32.store 2 0
+ 000a12: 41 01                      | i32.const 1
+ 000a14: 21 28                      | local.set 40
+ 000a16: 20 27                      | local.get 39
+ 000a18: 21 29                      | local.set 41
+ 000a1a: 20 28                      | local.get 40
+ 000a1c: 21 2a                      | local.set 42
+ 000a1e: 20 29                      | local.get 41
+ 000a20: 20 2a                      | local.get 42
+ 000a22: 46                         | i32.eq
+ 000a23: 21 2b                      | local.set 43
+ 000a25: 41 01                      | i32.const 1
+ 000a27: 21 2c                      | local.set 44
+ 000a29: 20 2b                      | local.get 43
+ 000a2b: 20 2c                      | local.get 44
+ 000a2d: 71                         | i32.and
+ 000a2e: 21 2d                      | local.set 45
+ 000a30: 02 40                      | block
+ 000a32: 20 2d                      |   local.get 45
+ 000a34: 0d 00                      |   br_if 0
+ 000a36: 41 80 80 80 80 00          |   i32.const 0
+           000a37: R_WASM_MEMORY_ADDR_TLS_SLEB 17 <__THREW__>
+ 000a3c: 21 2e                      |   local.set 46
+ 000a3e: 23 81 80 80 80 00          |   global.get 1 <env.__tls_base>
+           000a3f: R_WASM_GLOBAL_INDEX_LEB 18 <env.__tls_base>
+ 000a44: 21 2f                      |   local.set 47
+ 000a46: 20 2f                      |   local.get 47
+ 000a48: 20 2e                      |   local.get 46
+ 000a4a: 6a                         |   i32.add
+ 000a4b: 21 30                      |   local.set 48
+ 000a4d: 41 00                      |   i32.const 0
+ 000a4f: 21 31                      |   local.set 49
+ 000a51: 20 30                      |   local.get 48
+ 000a53: 20 31                      |   local.get 49
+ 000a55: 36 02 00                   |   i32.store 2 0
+ 000a58: 41 b0 80 80 80 00          |   i32.const 48
+           000a59: R_WASM_MEMORY_ADDR_SLEB 4 <.L__unnamed_1>
+ 000a5e: 21 32                      |   local.set 50
+ 000a60: 41 83 80 80 80 00          |   i32.const 3
+           000a61: R_WASM_TABLE_INDEX_SLEB 21 <env.std::thread::local::LocalKey<T>::with>
+ 000a66: 21 33                      |   local.set 51
+ 000a68: 20 33                      |   local.get 51
+ 000a6a: 20 32                      |   local.get 50
+ 000a6c: 10 8c 80 80 80 00          |   call 12 <invoke_ii>
+           000a6d: R_WASM_FUNCTION_INDEX_LEB 22 <invoke_ii>
+ 000a72: 21 34                      |   local.set 52
+ 000a74: 20 30                      |   local.get 48
+ 000a76: 28 02 00                   |   i32.load 2 0
+ 000a79: 21 35                      |   local.set 53
+ 000a7b: 20 30                      |   local.get 48
+ 000a7d: 20 31                      |   local.get 49
+ 000a7f: 36 02 00                   |   i32.store 2 0
+ 000a82: 41 01                      |   i32.const 1
+ 000a84: 21 36                      |   local.set 54
+ 000a86: 20 35                      |   local.get 53
+ 000a88: 21 37                      |   local.set 55
+ 000a8a: 20 36                      |   local.get 54
+ 000a8c: 21 38                      |   local.set 56
+ 000a8e: 20 37                      |   local.get 55
+ 000a90: 20 38                      |   local.get 56
+ 000a92: 46                         |   i32.eq
+ 000a93: 21 39                      |   local.set 57
+ 000a95: 41 01                      |   i32.const 1
+ 000a97: 21 3a                      |   local.set 58
+ 000a99: 20 39                      |   local.get 57
+ 000a9b: 20 3a                      |   local.get 58
+ 000a9d: 71                         |   i32.and
+ 000a9e: 21 3b                      |   local.set 59
+ 000aa0: 20 3b                      |   local.get 59
+ 000aa2: 0d 00                      |   br_if 0
+ 000aa4: 20 02                      |   local.get 2
+ 000aa6: 20 34                      |   local.get 52
+ 000aa8: 36 02 74                   |   i32.store 2 116
+ 000aab: 41 f4 00                   |   i32.const 116
+ 000aae: 21 3c                      |   local.set 60
+ 000ab0: 20 02                      |   local.get 2
+ 000ab2: 20 3c                      |   local.get 60
+ 000ab4: 6a                         |   i32.add
+ 000ab5: 21 3d                      |   local.set 61
+ 000ab7: 20 02                      |   local.get 2
+ 000ab9: 20 3d                      |   local.get 61
+ 000abb: 36 02 70                   |   i32.store 2 112
+ 000abe: 20 02                      |   local.get 2
+ 000ac0: 28 02 70                   |   i32.load 2 112
+ 000ac3: 21 3e                      |   local.set 62
+ 000ac5: 20 02                      |   local.get 2
+ 000ac7: 20 3e                      |   local.get 62
+ 000ac9: 36 02 9c 01                |   i32.store 2 156
+ 000acd: 41 80 80 80 80 00          |   i32.const 0
+           000ace: R_WASM_MEMORY_ADDR_TLS_SLEB 17 <__THREW__>
+ 000ad3: 21 3f                      |   local.set 63
+ 000ad5: 23 81 80 80 80 00          |   global.get 1 <env.__tls_base>
+           000ad6: R_WASM_GLOBAL_INDEX_LEB 18 <env.__tls_base>
+ 000adb: 21 40                      |   local.set 64
+ 000add: 20 40                      |   local.get 64
+ 000adf: 20 3f                      |   local.get 63
+ 000ae1: 6a                         |   i32.add
+ 000ae2: 21 41                      |   local.set 65
+ 000ae4: 41 00                      |   i32.const 0
+ 000ae6: 21 42                      |   local.set 66
+ 000ae8: 20 41                      |   local.get 65
+ 000aea: 20 42                      |   local.get 66
+ 000aec: 36 02 00                   |   i32.store 2 0
+ 000aef: 41 81 80 80 80 00          |   i32.const 1
+           000af0: R_WASM_TABLE_INDEX_SLEB 10 <env.core::fmt::num::imp::<impl core::fmt::Display for i32>::fmt>
+ 000af5: 21 43                      |   local.set 67
+ 000af7: 41 84 80 80 80 00          |   i32.const 4
+           000af8: R_WASM_TABLE_INDEX_SLEB 11 <env.core::fmt::ArgumentV1::new>
+ 000afd: 21 44                      |   local.set 68
+ 000aff: 41 08                      |   i32.const 8
+ 000b01: 21 45                      |   local.set 69
+ 000b03: 20 02                      |   local.get 2
+ 000b05: 20 45                      |   local.get 69
+ 000b07: 6a                         |   i32.add
+ 000b08: 21 46                      |   local.set 70
+ 000b0a: 20 44                      |   local.get 68
+ 000b0c: 20 46                      |   local.get 70
+ 000b0e: 20 3e                      |   local.get 62
+ 000b10: 20 43                      |   local.get 67
+ 000b12: 10 8d 80 80 80 00          |   call 13 <invoke_viii>
+           000b13: R_WASM_FUNCTION_INDEX_LEB 23 <invoke_viii>
+ 000b18: 20 02                      |   local.get 2
+ 000b1a: 28 02 0c                   |   i32.load 2 12
+ 000b1d: 21 47                      |   local.set 71
+ 000b1f: 20 02                      |   local.get 2
+ 000b21: 28 02 08                   |   i32.load 2 8
+ 000b24: 21 48                      |   local.set 72
+ 000b26: 20 41                      |   local.get 65
+ 000b28: 28 02 00                   |   i32.load 2 0
+ 000b2b: 21 49                      |   local.set 73
+ 000b2d: 20 41                      |   local.get 65
+ 000b2f: 20 42                      |   local.get 66
+ 000b31: 36 02 00                   |   i32.store 2 0
+ 000b34: 41 01                      |   i32.const 1
+ 000b36: 21 4a                      |   local.set 74
+ 000b38: 20 49                      |   local.get 73
+ 000b3a: 21 4b                      |   local.set 75
+ 000b3c: 20 4a                      |   local.get 74
+ 000b3e: 21 4c                      |   local.set 76
+ 000b40: 20 4b                      |   local.get 75
+ 000b42: 20 4c                      |   local.get 76
+ 000b44: 46                         |   i32.eq
+ 000b45: 21 4d                      |   local.set 77
+ 000b47: 41 01                      |   i32.const 1
+ 000b49: 21 4e                      |   local.set 78
+ 000b4b: 20 4d                      |   local.get 77
+ 000b4d: 20 4e                      |   local.get 78
+ 000b4f: 71                         |   i32.and
+ 000b50: 21 4f                      |   local.set 79
+ 000b52: 20 4f                      |   local.get 79
+ 000b54: 0d 00                      |   br_if 0
+ 000b56: 20 02                      |   local.get 2
+ 000b58: 20 48                      |   local.get 72
+ 000b5a: 36 02 68                   |   i32.store 2 104
+ 000b5d: 20 02                      |   local.get 2
+ 000b5f: 20 47                      |   local.get 71
+ 000b61: 36 02 6c                   |   i32.store 2 108
+ 000b64: 41 80 80 80 80 00          |   i32.const 0
+           000b65: R_WASM_MEMORY_ADDR_TLS_SLEB 17 <__THREW__>
+ 000b6a: 21 50                      |   local.set 80
+ 000b6c: 23 81 80 80 80 00          |   global.get 1 <env.__tls_base>
+           000b6d: R_WASM_GLOBAL_INDEX_LEB 18 <env.__tls_base>
+ 000b72: 21 51                      |   local.set 81
+ 000b74: 20 51                      |   local.get 81
+ 000b76: 20 50                      |   local.get 80
+ 000b78: 6a                         |   i32.add
+ 000b79: 21 52                      |   local.set 82
+ 000b7b: 41 00                      |   i32.const 0
+ 000b7d: 21 53                      |   local.set 83
+ 000b7f: 20 52                      |   local.get 82
+ 000b81: 20 53                      |   local.get 83
+ 000b83: 36 02 00                   |   i32.store 2 0
+ 000b86: 41 f0 80 80 80 00          |   i32.const 112
+           000b87: R_WASM_MEMORY_ADDR_SLEB 24 <.L__unnamed_6>
+ 000b8c: 21 54                      |   local.set 84
+ 000b8e: 41 85 80 80 80 00          |   i32.const 5
+           000b8f: R_WASM_TABLE_INDEX_SLEB 8 <env.core::fmt::Arguments::new_v1>
+ 000b94: 21 55                      |   local.set 85
+ 000b96: 41 01                      |   i32.const 1
+ 000b98: 21 56                      |   local.set 86
+ 000b9a: 41 02                      |   i32.const 2
+ 000b9c: 21 57                      |   local.set 87
+ 000b9e: 41 d0 00                   |   i32.const 80
+ 000ba1: 21 58                      |   local.set 88
+ 000ba3: 20 02                      |   local.get 2
+ 000ba5: 20 58                      |   local.get 88
+ 000ba7: 6a                         |   i32.add
+ 000ba8: 21 59                      |   local.set 89
+ 000baa: 41 e8 00                   |   i32.const 104
+ 000bad: 21 5a                      |   local.set 90
+ 000baf: 20 02                      |   local.get 2
+ 000bb1: 20 5a                      |   local.get 90
+ 000bb3: 6a                         |   i32.add
+ 000bb4: 21 5b                      |   local.set 91
+ 000bb6: 20 55                      |   local.get 85
+ 000bb8: 20 59                      |   local.get 89
+ 000bba: 20 54                      |   local.get 84
+ 000bbc: 20 57                      |   local.get 87
+ 000bbe: 20 5b                      |   local.get 91
+ 000bc0: 20 56                      |   local.get 86
+ 000bc2: 10 8e 80 80 80 00          |   call 14 <invoke_viiiii>
+           000bc3: R_WASM_FUNCTION_INDEX_LEB 25 <invoke_viiiii>
+ 000bc8: 20 52                      |   local.get 82
+ 000bca: 28 02 00                   |   i32.load 2 0
+ 000bcd: 21 5c                      |   local.set 92
+ 000bcf: 20 52                      |   local.get 82
+ 000bd1: 20 53                      |   local.get 83
+ 000bd3: 36 02 00                   |   i32.store 2 0
+ 000bd6: 41 01                      |   i32.const 1
+ 000bd8: 21 5d                      |   local.set 93
+ 000bda: 20 5c                      |   local.get 92
+ 000bdc: 21 5e                      |   local.set 94
+ 000bde: 20 5d                      |   local.get 93
+ 000be0: 21 5f                      |   local.set 95
+ 000be2: 20 5e                      |   local.get 94
+ 000be4: 20 5f                      |   local.get 95
+ 000be6: 46                         |   i32.eq
+ 000be7: 21 60                      |   local.set 96
+ 000be9: 41 01                      |   i32.const 1
+ 000beb: 21 61                      |   local.set 97
+ 000bed: 20 60                      |   local.get 96
+ 000bef: 20 61                      |   local.get 97
+ 000bf1: 71                         |   i32.and
+ 000bf2: 21 62                      |   local.set 98
+ 000bf4: 20 62                      |   local.get 98
+ 000bf6: 0d 00                      |   br_if 0
+ 000bf8: 41 80 80 80 80 00          |   i32.const 0
+           000bf9: R_WASM_MEMORY_ADDR_TLS_SLEB 17 <__THREW__>
+ 000bfe: 21 63                      |   local.set 99
+ 000c00: 23 81 80 80 80 00          |   global.get 1 <env.__tls_base>
+           000c01: R_WASM_GLOBAL_INDEX_LEB 18 <env.__tls_base>
+ 000c06: 21 64                      |   local.set 100
+ 000c08: 20 64                      |   local.get 100
+ 000c0a: 20 63                      |   local.get 99
+ 000c0c: 6a                         |   i32.add
+ 000c0d: 21 65                      |   local.set 101
+ 000c0f: 41 00                      |   i32.const 0
+ 000c11: 21 66                      |   local.set 102
+ 000c13: 20 65                      |   local.get 101
+ 000c15: 20 66                      |   local.get 102
+ 000c17: 36 02 00                   |   i32.store 2 0
+ 000c1a: 41 86 80 80 80 00          |   i32.const 6
+           000c1b: R_WASM_TABLE_INDEX_SLEB 9 <env.std::io::stdio::_print>
+ 000c20: 21 67                      |   local.set 103
+ 000c22: 41 d0 00                   |   i32.const 80
+ 000c25: 21 68                      |   local.set 104
+ 000c27: 20 02                      |   local.get 2
+ 000c29: 20 68                      |   local.get 104
+ 000c2b: 6a                         |   i32.add
+ 000c2c: 21 69                      |   local.set 105
+ 000c2e: 20 67                      |   local.get 103
+ 000c30: 20 69                      |   local.get 105
+ 000c32: 10 8a 80 80 80 00          |   call 10 <invoke_vi>
+           000c33: R_WASM_FUNCTION_INDEX_LEB 20 <invoke_vi>
+ 000c38: 20 65                      |   local.get 101
+ 000c3a: 28 02 00                   |   i32.load 2 0
+ 000c3d: 21 6a                      |   local.set 106
+ 000c3f: 20 65                      |   local.get 101
+ 000c41: 20 66                      |   local.get 102
+ 000c43: 36 02 00                   |   i32.store 2 0
+ 000c46: 41 01                      |   i32.const 1
+ 000c48: 21 6b                      |   local.set 107
+ 000c4a: 20 6a                      |   local.get 106
+ 000c4c: 21 6c                      |   local.set 108
+ 000c4e: 20 6b                      |   local.get 107
+ 000c50: 21 6d                      |   local.set 109
+ 000c52: 20 6c                      |   local.get 108
+ 000c54: 20 6d                      |   local.get 109
+ 000c56: 46                         |   i32.eq
+ 000c57: 21 6e                      |   local.set 110
+ 000c59: 41 01                      |   i32.const 1
+ 000c5b: 21 6f                      |   local.set 111
+ 000c5d: 20 6e                      |   local.get 110
+ 000c5f: 20 6f                      |   local.get 111
+ 000c61: 71                         |   i32.and
+ 000c62: 21 70                      |   local.set 112
+ 000c64: 20 70                      |   local.get 112
+ 000c66: 0d 00                      |   br_if 0
+ 000c68: 41 00                      |   i32.const 0
+ 000c6a: 21 71                      |   local.set 113
+ 000c6c: 20 02                      |   local.get 2
+ 000c6e: 20 71                      |   local.get 113
+ 000c70: 3a 00 8b 01                |   i32.store8 0 139
+ 000c74: 41 08                      |   i32.const 8
+ 000c76: 21 72                      |   local.set 114
+ 000c78: 41 f8 00                   |   i32.const 120
+ 000c7b: 21 73                      |   local.set 115
+ 000c7d: 20 02                      |   local.get 2
+ 000c7f: 20 73                      |   local.get 115
+ 000c81: 6a                         |   i32.add
+ 000c82: 21 74                      |   local.set 116
+ 000c84: 20 74                      |   local.get 116
+ 000c86: 20 72                      |   local.get 114
+ 000c88: 6a                         |   i32.add
+ 000c89: 21 75                      |   local.set 117
+ 000c8b: 41 c0 00                   |   i32.const 64
+ 000c8e: 21 76                      |   local.set 118
+ 000c90: 20 02                      |   local.get 2
+ 000c92: 20 76                      |   local.get 118
+ 000c94: 6a                         |   i32.add
+ 000c95: 21 77                      |   local.set 119
+ 000c97: 20 77                      |   local.get 119
+ 000c99: 20 72                      |   local.get 114
+ 000c9b: 6a                         |   i32.add
+ 000c9c: 21 78                      |   local.set 120
+ 000c9e: 20 78                      |   local.get 120
+ 000ca0: 29 03 00                   |   i64.load 3 0
+ 000ca3: 21 79                      |   local.set 121
+ 000ca5: 20 75                      |   local.get 117
+ 000ca7: 20 79                      |   local.get 121
+ 000ca9: 37 03 00                   |   i64.store 3 0
+ 000cac: 20 02                      |   local.get 2
+ 000cae: 29 03 40                   |   i64.load 3 64
+ 000cb1: 21 7a                      |   local.set 122
+ 000cb3: 20 02                      |   local.get 2
+ 000cb5: 20 7a                      |   local.get 122
+ 000cb7: 37 03 78                   |   i64.store 3 120
+ 000cba: 41 80 80 80 80 00          |   i32.const 0
+           000cbb: R_WASM_MEMORY_ADDR_TLS_SLEB 17 <__THREW__>
+ 000cc0: 21 7b                      |   local.set 123
+ 000cc2: 23 81 80 80 80 00          |   global.get 1 <env.__tls_base>
+           000cc3: R_WASM_GLOBAL_INDEX_LEB 18 <env.__tls_base>
+ 000cc8: 21 7c                      |   local.set 124
+ 000cca: 20 7c                      |   local.get 124
+ 000ccc: 20 7b                      |   local.get 123
+ 000cce: 6a                         |   i32.add
+ 000ccf: 21 7d                      |   local.set 125
+ 000cd1: 20 7d                      |   local.get 125
+ 000cd3: 20 71                      |   local.get 113
+ 000cd5: 36 02 00                   |   i32.store 2 0
+ 000cd8: 41 87 80 80 80 00          |   i32.const 7
+           000cd9: R_WASM_TABLE_INDEX_SLEB 26 <env.std::thread::JoinHandle<T>::join>
+ 000cde: 21 7e                      |   local.set 126
+ 000ce0: 41 f8 00                   |   i32.const 120
+ 000ce3: 21 7f                      |   local.set 127
+ 000ce5: 20 02                      |   local.get 2
+ 000ce7: 20 7f                      |   local.get 127
+ 000ce9: 6a                         |   i32.add
+ 000cea: 21 80 01                   |   local.set 128
+ 000ced: 20 7e                      |   local.get 126
+ 000cef: 20 02                      |   local.get 2
+ 000cf1: 20 80 01                   |   local.get 128
+ 000cf4: 10 90 80 80 80 00          |   call 16 <invoke_vii>
+           000cf5: R_WASM_FUNCTION_INDEX_LEB 27 <invoke_vii>
+ 000cfa: 20 02                      |   local.get 2
+ 000cfc: 28 02 04                   |   i32.load 2 4
+ 000cff: 21 81 01                   |   local.set 129
+ 000d02: 20 02                      |   local.get 2
+ 000d04: 28 02 00                   |   i32.load 2 0
+ 000d07: 21 82 01                   |   local.set 130
+ 000d0a: 20 7d                      |   local.get 125
+ 000d0c: 28 02 00                   |   i32.load 2 0
+ 000d0f: 21 83 01                   |   local.set 131
+ 000d12: 20 7d                      |   local.get 125
+ 000d14: 20 71                      |   local.get 113
+ 000d16: 36 02 00                   |   i32.store 2 0
+ 000d19: 41 01                      |   i32.const 1
+ 000d1b: 21 84 01                   |   local.set 132
+ 000d1e: 20 83 01                   |   local.get 131
+ 000d21: 21 85 01                   |   local.set 133
+ 000d24: 20 84 01                   |   local.get 132
+ 000d27: 21 86 01                   |   local.set 134
+ 000d2a: 20 85 01                   |   local.get 133
+ 000d2d: 20 86 01                   |   local.get 134
+ 000d30: 46                         |   i32.eq
+ 000d31: 21 87 01                   |   local.set 135
+ 000d34: 41 01                      |   i32.const 1
+ 000d36: 21 88 01                   |   local.set 136
+ 000d39: 20 87 01                   |   local.get 135
+ 000d3c: 20 88 01                   |   local.get 136
+ 000d3f: 71                         |   i32.and
+ 000d40: 21 89 01                   |   local.set 137
+ 000d43: 20 89 01                   |   local.get 137
+ 000d46: 0d 00                      |   br_if 0
+ 000d48: 41 80 80 80 80 00          |   i32.const 0
+           000d49: R_WASM_MEMORY_ADDR_TLS_SLEB 17 <__THREW__>
+ 000d4e: 21 8a 01                   |   local.set 138
+ 000d51: 23 81 80 80 80 00          |   global.get 1 <env.__tls_base>
+           000d52: R_WASM_GLOBAL_INDEX_LEB 18 <env.__tls_base>
+ 000d57: 21 8b 01                   |   local.set 139
+ 000d5a: 20 8b 01                   |   local.get 139
+ 000d5d: 20 8a 01                   |   local.get 138
+ 000d60: 6a                         |   i32.add
+ 000d61: 21 8c 01                   |   local.set 140
+ 000d64: 41 00                      |   i32.const 0
+ 000d66: 21 8d 01                   |   local.set 141
+ 000d69: 20 8c 01                   |   local.get 140
+ 000d6c: 20 8d 01                   |   local.get 141
+ 000d6f: 36 02 00                   |   i32.store 2 0
+ 000d72: 41 8c 81 80 80 00          |   i32.const 140
+           000d73: R_WASM_MEMORY_ADDR_SLEB 28 <.L__unnamed_7>
+ 000d78: 21 8e 01                   |   local.set 142
+ 000d7b: 41 88 80 80 80 00          |   i32.const 8
+           000d7c: R_WASM_TABLE_INDEX_SLEB 29 <env.core::result::Result<T,E>::unwrap>
+ 000d81: 21 8f 01                   |   local.set 143
+ 000d84: 20 8f 01                   |   local.get 143
+ 000d87: 20 82 01                   |   local.get 130
+ 000d8a: 20 81 01                   |   local.get 129
+ 000d8d: 20 8e 01                   |   local.get 142
+ 000d90: 10 8d 80 80 80 00          |   call 13 <invoke_viii>
+           000d91: R_WASM_FUNCTION_INDEX_LEB 23 <invoke_viii>
+ 000d96: 20 8c 01                   |   local.get 140
+ 000d99: 28 02 00                   |   i32.load 2 0
+ 000d9c: 21 90 01                   |   local.set 144
+ 000d9f: 20 8c 01                   |   local.get 140
+ 000da2: 20 8d 01                   |   local.get 141
+ 000da5: 36 02 00                   |   i32.store 2 0
+ 000da8: 41 01                      |   i32.const 1
+ 000daa: 21 91 01                   |   local.set 145
+ 000dad: 20 90 01                   |   local.get 144
+ 000db0: 21 92 01                   |   local.set 146
+ 000db3: 20 91 01                   |   local.get 145
+ 000db6: 21 93 01                   |   local.set 147
+ 000db9: 20 92 01                   |   local.get 146
+ 000dbc: 20 93 01                   |   local.get 147
+ 000dbf: 46                         |   i32.eq
+ 000dc0: 21 94 01                   |   local.set 148
+ 000dc3: 41 01                      |   i32.const 1
+ 000dc5: 21 95 01                   |   local.set 149
+ 000dc8: 20 94 01                   |   local.get 148
+ 000dcb: 20 95 01                   |   local.get 149
+ 000dce: 71                         |   i32.and
+ 000dcf: 21 96 01                   |   local.set 150
+ 000dd2: 20 96 01                   |   local.get 150
+ 000dd5: 0d 00                      |   br_if 0
+ 000dd7: 41 00                      |   i32.const 0
+ 000dd9: 21 97 01                   |   local.set 151
+ 000ddc: 20 02                      |   local.get 2
+ 000dde: 20 97 01                   |   local.get 151
+ 000de1: 3a 00 8b 01                |   i32.store8 0 139
+ 000de5: 41 a0 01                   |   i32.const 160
+ 000de8: 21 98 01                   |   local.set 152
+ 000deb: 20 02                      |   local.get 2
+ 000ded: 20 98 01                   |   local.get 152
+ 000df0: 6a                         |   i32.add
+ 000df1: 21 99 01                   |   local.set 153
+ 000df4: 20 99 01                   |   local.get 153
+ 000df7: 24 80 80 80 80 00          |   global.set 0 <env.__stack_pointer>
+           000df8: R_WASM_GLOBAL_INDEX_LEB 1 <env.__stack_pointer>
+ 000dfd: 0f                         |   return
+ 000dfe: 0b                         | end
+ 000dff: 10 92 80 80 80 00          | call 18 <__cxa_find_matching_catch_2>
+           000e00: R_WASM_FUNCTION_INDEX_LEB 30 <__cxa_find_matching_catch_2>
+ 000e05: 21 9a 01                   | local.set 154
+ 000e08: 10 93 80 80 80 00          | call 19 <getTempRet0>
+           000e09: R_WASM_FUNCTION_INDEX_LEB 31 <getTempRet0>
+ 000e0e: 21 9b 01                   | local.set 155
+ 000e11: 20 02                      | local.get 2
+ 000e13: 20 9a 01                   | local.get 154
+ 000e16: 36 02 90 01                | i32.store 2 144
+ 000e1a: 20 02                      | local.get 2
+ 000e1c: 20 9b 01                   | local.get 155
+ 000e1f: 36 02 94 01                | i32.store 2 148
+ 000e23: 20 02                      | local.get 2
+ 000e25: 2d 00 8b 01                | i32.load8_u 0 139
+ 000e29: 21 9c 01                   | local.set 156
+ 000e2c: 41 01                      | i32.const 1
+ 000e2e: 21 9d 01                   | local.set 157
+ 000e31: 20 9c 01                   | local.get 156
+ 000e34: 20 9d 01                   | local.get 157
+ 000e37: 71                         | i32.and
+ 000e38: 21 9e 01                   | local.set 158
+ 000e3b: 02 40                      | block
+ 000e3d: 20 9e 01                   |   local.get 158
+ 000e40: 45                         |   i32.eqz
+ 000e41: 0d 00                      |   br_if 0
+ 000e43: 41 c0 00                   |   i32.const 64
+ 000e46: 21 9f 01                   |   local.set 159
+ 000e49: 20 02                      |   local.get 2
+ 000e4b: 20 9f 01                   |   local.get 159
+ 000e4e: 6a                         |   i32.add
+ 000e4f: 21 a0 01                   |   local.set 160
+ 000e52: 20 a0 01                   |   local.get 160
+ 000e55: 21 a1 01                   |   local.set 161
+ 000e58: 20 a1 01                   |   local.get 161
+ 000e5b: 10 94 80 80 80 00          |   call 20 <env.core::ptr::drop_in_place<std::thread::JoinHandle<()>>>
+           000e5c: R_WASM_FUNCTION_INDEX_LEB 32 <env.core::ptr::drop_in_place<std::thread::JoinHandle<()>>>
+ 000e61: 0b                         | end
+ 000e62: 20 02                      | local.get 2
+ 000e64: 28 02 90 01                | i32.load 2 144
+ 000e68: 21 a2 01                   | local.set 162
+ 000e6b: 20 02                      | local.get 2
+ 000e6d: 28 02 94 01                | i32.load 2 148
+ 000e71: 1a                         | drop
+ 000e72: 20 a2 01                   | local.get 162
+ 000e75: 10 95 80 80 80 00          | call 21 <__resumeException>
+           000e76: R_WASM_FUNCTION_INDEX_LEB 33 <__resumeException>
+ 000e7b: 00                         | unreachable
+ 000e7c: 0b                         | end
+000e7e func[27] <Example::VAR1::__init>:
+ 000e7f: 02 7f                      | local[0..1] type=i32
+ 000e81: 41 e7 d6 00                | i32.const 11111
+ 000e85: 21 00                      | local.set 0
+ 000e87: 20 00                      | local.get 0
+ 000e89: 10 96 80 80 80 00          | call 22 <env.core::cell::Cell<T>::new>
+           000e8a: R_WASM_FUNCTION_INDEX_LEB 35 <env.core::cell::Cell<T>::new>
+ 000e8f: 21 01                      | local.set 1
+ 000e91: 20 01                      | local.get 1
+ 000e93: 0f                         | return
+ 000e94: 0b                         | end
+000e96 func[28] <Example::VAR1::__getit>:
+ 000e97: 04 7f                      | local[0..3] type=i32
+ 000e99: 41 9c 81 80 80 00          | i32.const 156
+           000e9a: R_WASM_MEMORY_ADDR_TLS_SLEB 37 <Example::VAR1::__getit::__KEY>
+ 000e9f: 21 00                      | local.set 0
+ 000ea1: 23 81 80 80 80 00          | global.get 1 <env.__tls_base>
+           000ea2: R_WASM_GLOBAL_INDEX_LEB 18 <env.__tls_base>
+ 000ea7: 21 01                      | local.set 1
+ 000ea9: 20 01                      | local.get 1
+ 000eab: 20 00                      | local.get 0
+ 000ead: 6a                         | i32.add
+ 000eae: 21 02                      | local.set 2
+ 000eb0: 20 02                      | local.get 2
+ 000eb2: 10 97 80 80 80 00          | call 23 <env.std::thread::local::fast::Key<T>::get>
+           000eb3: R_WASM_FUNCTION_INDEX_LEB 38 <env.std::thread::local::fast::Key<T>::get>
+ 000eb8: 21 03                      | local.set 3
+ 000eba: 20 03                      | local.get 3
+ 000ebc: 0f                         | return
+ 000ebd: 0b                         | end
+000ebf func[29] <main>:
+ 000ec0: 02 7f                      | local[0..1] type=i32
+ 000ec2: 41 89 80 80 80 00          | i32.const 9
+           000ec3: R_WASM_TABLE_INDEX_SLEB 13 <Example::main>
+ 000ec8: 21 02                      | local.set 2
+ 000eca: 20 02                      | local.get 2
+ 000ecc: 20 00                      | local.get 0
+ 000ece: 20 01                      | local.get 1
+ 000ed0: 10 98 80 80 80 00          | call 24 <env.std::rt::lang_start>
+           000ed1: R_WASM_FUNCTION_INDEX_LEB 40 <env.std::rt::lang_start>
+ 000ed6: 21 03                      | local.set 3
+ 000ed8: 20 03                      | local.get 3
+ 000eda: 0f                         | return
+ 000edb: 0b                         | end

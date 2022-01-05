@@ -1,0 +1,555 @@
+
+Example.1b0wam0nd5eghoka.rcgu.o:	file format wasm 0x1
+
+Section Details:
+
+Type[11]:
+ - type[0] () -> nil
+ - type[1] (i32, i32, i32) -> nil
+ - type[2] (i32, i32) -> nil
+ - type[3] (i32) -> i32
+ - type[4] (i32, i32, i32, i32, i32) -> nil
+ - type[5] (i32) -> nil
+ - type[6] (i32, i32) -> i32
+ - type[7] (i32, i32, i32, i32) -> nil
+ - type[8] (i32, i32, i32, i32, i32, i32) -> nil
+ - type[9] () -> i32
+ - type[10] (i32, i32, i32) -> i32
+Import[29]:
+ - memory[0] pages: initial=1 <- env.__linear_memory
+ - global[0] i32 mutable=1 <- env.__stack_pointer
+ - func[0] sig=1 <env._ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h27202336c85315f5E> <- env._ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h27202336c85315f5E
+ - func[1] sig=2 <env._ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h35d0e8c2bb311ebaE> <- env._ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h35d0e8c2bb311ebaE
+ - func[2] sig=3 <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h34847eaffd23fa57E> <- env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h34847eaffd23fa57E
+ - func[3] sig=4 <env._ZN4core3fmt9Arguments6new_v117h7dbb756e30525a82E> <- env._ZN4core3fmt9Arguments6new_v117h7dbb756e30525a82E
+ - func[4] sig=5 <env._ZN3std2io5stdio6_print17h14d58645d005d81eE> <- env._ZN3std2io5stdio6_print17h14d58645d005d81eE
+ - func[5] sig=6 <env._ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17ha3a2070627a4f169E> <- env._ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17ha3a2070627a4f169E
+ - func[6] sig=1 <env._ZN4core3fmt10ArgumentV13new17hcca9332d44637166E> <- env._ZN4core3fmt10ArgumentV13new17hcca9332d44637166E
+ - func[7] sig=3 <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h6ca48062d7dc28eaE> <- env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h6ca48062d7dc28eaE
+ - func[8] sig=5 <env._ZN3std6thread5spawn17hf28c4aa442f6c24aE> <- env._ZN3std6thread5spawn17hf28c4aa442f6c24aE
+ - global[1] i32 mutable=1 <- env.__tls_base
+ - func[9] sig=5 <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h74d7dfbf3779a8eaE> <- env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h74d7dfbf3779a8eaE
+ - func[10] sig=2 <invoke_vi> <- env.invoke_vi
+ - func[11] sig=3 <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17hbb804fe11a7d0fdeE> <- env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17hbb804fe11a7d0fdeE
+ - func[12] sig=6 <invoke_ii> <- env.invoke_ii
+ - func[13] sig=7 <invoke_viii> <- env.invoke_viii
+ - func[14] sig=8 <invoke_viiiii> <- env.invoke_viiiii
+ - func[15] sig=2 <env._ZN3std6thread19JoinHandle$LT$T$GT$4join17he9c18994c175b734E> <- env._ZN3std6thread19JoinHandle$LT$T$GT$4join17he9c18994c175b734E
+ - func[16] sig=1 <invoke_vii> <- env.invoke_vii
+ - func[17] sig=1 <env._ZN4core6result19Result$LT$T$C$E$GT$6unwrap17h44a6fd0f54961d21E> <- env._ZN4core6result19Result$LT$T$C$E$GT$6unwrap17h44a6fd0f54961d21E
+ - func[18] sig=9 <__cxa_find_matching_catch_2> <- env.__cxa_find_matching_catch_2
+ - func[19] sig=9 <getTempRet0> <- env.getTempRet0
+ - func[20] sig=5 <env._ZN4core3ptr60drop_in_place$LT$std..thread..JoinHandle$LT$$LP$$RP$$GT$$GT$17hc9c3bc48539054a5E> <- env._ZN4core3ptr60drop_in_place$LT$std..thread..JoinHandle$LT$$LP$$RP$$GT$$GT$17hc9c3bc48539054a5E
+ - func[21] sig=5 <__resumeException> <- env.__resumeException
+ - func[22] sig=3 <env._ZN4core4cell13Cell$LT$T$GT$3new17h5078430062ffaa59E> <- env._ZN4core4cell13Cell$LT$T$GT$3new17h5078430062ffaa59E
+ - func[23] sig=3 <env._ZN3std6thread5local4fast12Key$LT$T$GT$3get17h2e018944c44a0e16E> <- env._ZN3std6thread5local4fast12Key$LT$T$GT$3get17h2e018944c44a0e16E
+ - func[24] sig=10 <env._ZN3std2rt10lang_start17h6dcf2f2ba6f40ab2E> <- env._ZN3std2rt10lang_start17h6dcf2f2ba6f40ab2E
+ - table[0] type=funcref initial=10 <- env.__indirect_function_table
+Function[5]:
+ - func[25] sig=0 <_ZN7Example2xs17hdd373909e2b07503E>
+ - func[26] sig=0 <_ZN7Example4main17ha24d1522636b5b12E>
+ - func[27] sig=9 <_ZN7Example4VAR16__init17h61c911807fea57ffE>
+ - func[28] sig=9 <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE>
+ - func[29] sig=6 <main>
+Elem[1]:
+ - segment[0] flags=0 table=0 count=10 - init i32=1
+  - elem[1] = func[5] <env._ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17ha3a2070627a4f169E>
+  - elem[2] = func[9] <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h74d7dfbf3779a8eaE>
+  - elem[3] = func[11] <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17hbb804fe11a7d0fdeE>
+  - elem[4] = func[6] <env._ZN4core3fmt10ArgumentV13new17hcca9332d44637166E>
+  - elem[5] = func[3] <env._ZN4core3fmt9Arguments6new_v117h7dbb756e30525a82E>
+  - elem[6] = func[4] <env._ZN3std2io5stdio6_print17h14d58645d005d81eE>
+  - elem[7] = func[15] <env._ZN3std6thread19JoinHandle$LT$T$GT$4join17he9c18994c175b734E>
+  - elem[8] = func[17] <env._ZN4core6result19Result$LT$T$C$E$GT$6unwrap17h44a6fd0f54961d21E>
+  - elem[9] = func[26] <_ZN7Example4main17ha24d1522636b5b12E>
+  - elem[10] = func[28] <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE>
+DataCount:
+ - data count: 14
+Code[5]:
+ - func[25] size=534 <_ZN7Example2xs17hdd373909e2b07503E>
+ - func[26] size=1502 <_ZN7Example4main17ha24d1522636b5b12E>
+ - func[27] size=23 <_ZN7Example4VAR16__init17h61c911807fea57ffE>
+ - func[28] size=40 <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE>
+ - func[29] size=29 <main>
+Data[14]:
+ - segment[0] <.rodata..L__unnamed_8> memory=0 size=2 - init i32=0
+  - 0000000: 580a                                     X.
+ - segment[1] <.rodata..L__unnamed_2> memory=0 size=8 - init i32=4
+  - 0000004: 0000 0000 0200 0000                      ........
+ - segment[2] <.rodata..L__unnamed_3> memory=0 size=0 - init i32=12
+ - segment[3] <.rodata..L__unnamed_9> memory=0 size=16 - init i32=12
+  - 000000c: 5641 5231 2069 6e20 7468 7265 6164 3a20  VAR1 in thread: 
+ - segment[4] <.rodata..L__unnamed_10> memory=0 size=1 - init i32=28
+  - 000001c: 0a                                       .
+ - segment[5] <.rodata..L__unnamed_4> memory=0 size=16 - init i32=32
+  - 0000020: 0c00 0000 1000 0000 1c00 0000 0100 0000  ................
+ - segment[6] <.rodata..L__unnamed_1> memory=0 size=4 - init i32=48
+  - 0000030: 0a00 0000                                ....
+ - segment[7] <.rodata..L__unnamed_11> memory=0 size=21 - init i32=52
+  - 0000034: 5641 5231 2069 6e20 6d61 696e 2062 6566  VAR1 in main bef
+  - 0000044: 6f72 653a 20                             ore: 
+ - segment[8] <.rodata..L__unnamed_5> memory=0 size=16 - init i32=76
+  - 000004c: 3400 0000 1500 0000 1c00 0000 0100 0000  4...............
+ - segment[9] <.rodata..L__unnamed_12> memory=0 size=20 - init i32=92
+  - 000005c: 5641 5231 2069 6e20 6d61 696e 2061 6674  VAR1 in main aft
+  - 000006c: 6572 3a20                                er: 
+ - segment[10] <.rodata..L__unnamed_6> memory=0 size=16 - init i32=112
+  - 0000070: 5c00 0000 1400 0000 1c00 0000 0100 0000  \...............
+ - segment[11] <.rodata..L__unnamed_13> memory=0 size=11 - init i32=128
+  - 0000080: 7372 632f 6d61 696e 2e72 73              src/main.rs
+ - segment[12] <.rodata..L__unnamed_7> memory=0 size=16 - init i32=140
+  - 000008c: 8000 0000 0b00 0000 1300 0000 0f00 0000  ................
+ - segment[13] <.tbss._ZN7Example4VAR17__getit5__KEY17h9fd2473e7b8be3acE> memory=0 size=12 - init i32=156
+  - 000009c: 0000 0000 0000 0000 0000 0000            ............
+Custom:
+ - name: ".debug_abbrev"
+Custom:
+ - name: ".debug_info"
+Custom:
+ - name: ".debug_ranges"
+Custom:
+ - name: ".debug_str"
+Custom:
+ - name: ".debug_pubnames"
+Custom:
+ - name: ".debug_pubtypes"
+Custom:
+ - name: ".debug_line"
+Custom:
+ - name: "linking"
+  - symbol table [count=52]
+   - 0: F <_ZN7Example2xs17hdd373909e2b07503E> func=25 [ binding=global vis=hidden ]
+   - 1: G <env.__stack_pointer> global=0 [ undefined binding=global vis=default ]
+   - 2: F <env._ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h27202336c85315f5E> func=0 [ undefined binding=global vis=hidden ]
+   - 3: F <env._ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h35d0e8c2bb311ebaE> func=1 [ undefined binding=global vis=hidden ]
+   - 4: D <.L__unnamed_1> segment=6 offset=0 size=4 [ binding=local vis=default ]
+   - 5: F <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h34847eaffd23fa57E> func=2 [ undefined binding=global vis=hidden ]
+   - 6: D <.L__unnamed_2> segment=1 offset=0 size=8 [ binding=local vis=default ]
+   - 7: D <.L__unnamed_3> segment=2 offset=0 size=0 [ binding=local vis=default ]
+   - 8: F <env._ZN4core3fmt9Arguments6new_v117h7dbb756e30525a82E> func=3 [ undefined binding=global vis=hidden ]
+   - 9: F <env._ZN3std2io5stdio6_print17h14d58645d005d81eE> func=4 [ undefined binding=global vis=default ]
+   - 10: F <env._ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17ha3a2070627a4f169E> func=5 [ undefined binding=global vis=default ]
+   - 11: F <env._ZN4core3fmt10ArgumentV13new17hcca9332d44637166E> func=6 [ undefined binding=global vis=default ]
+   - 12: D <.L__unnamed_4> segment=5 offset=0 size=16 [ binding=local vis=default ]
+   - 13: F <_ZN7Example4main17ha24d1522636b5b12E> func=26 [ binding=local vis=default ]
+   - 14: F <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h6ca48062d7dc28eaE> func=7 [ undefined binding=global vis=hidden ]
+   - 15: D <.L__unnamed_5> segment=8 offset=0 size=16 [ binding=local vis=default ]
+   - 16: F <env._ZN3std6thread5spawn17hf28c4aa442f6c24aE> func=8 [ undefined binding=global vis=hidden ]
+   - 17: D <__THREW__> [ undefined binding=global vis=default ]
+   - 18: G <env.__tls_base> global=1 [ undefined binding=global vis=default ]
+   - 19: F <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h74d7dfbf3779a8eaE> func=9 [ undefined binding=global vis=hidden ]
+   - 20: F <invoke_vi> func=10 [ undefined explicit_name binding=global vis=default ]
+   - 21: F <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17hbb804fe11a7d0fdeE> func=11 [ undefined binding=global vis=hidden ]
+   - 22: F <invoke_ii> func=12 [ undefined explicit_name binding=global vis=default ]
+   - 23: F <invoke_viii> func=13 [ undefined explicit_name binding=global vis=default ]
+   - 24: D <.L__unnamed_6> segment=10 offset=0 size=16 [ binding=local vis=default ]
+   - 25: F <invoke_viiiii> func=14 [ undefined explicit_name binding=global vis=default ]
+   - 26: F <env._ZN3std6thread19JoinHandle$LT$T$GT$4join17he9c18994c175b734E> func=15 [ undefined binding=global vis=hidden ]
+   - 27: F <invoke_vii> func=16 [ undefined explicit_name binding=global vis=default ]
+   - 28: D <.L__unnamed_7> segment=12 offset=0 size=16 [ binding=local vis=default ]
+   - 29: F <env._ZN4core6result19Result$LT$T$C$E$GT$6unwrap17h44a6fd0f54961d21E> func=17 [ undefined binding=global vis=hidden ]
+   - 30: F <__cxa_find_matching_catch_2> func=18 [ undefined explicit_name binding=global vis=default ]
+   - 31: F <getTempRet0> func=19 [ undefined explicit_name binding=global vis=default ]
+   - 32: F <env._ZN4core3ptr60drop_in_place$LT$std..thread..JoinHandle$LT$$LP$$RP$$GT$$GT$17hc9c3bc48539054a5E> func=20 [ undefined binding=global vis=hidden ]
+   - 33: F <__resumeException> func=21 [ undefined explicit_name binding=global vis=default ]
+   - 34: F <_ZN7Example4VAR16__init17h61c911807fea57ffE> func=27 [ binding=global vis=hidden ]
+   - 35: F <env._ZN4core4cell13Cell$LT$T$GT$3new17h5078430062ffaa59E> func=22 [ undefined binding=global vis=hidden ]
+   - 36: F <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE> func=28 [ binding=local vis=default ]
+   - 37: D <_ZN7Example4VAR17__getit5__KEY17h9fd2473e7b8be3acE> segment=13 offset=0 size=12 [ binding=local vis=default ]
+   - 38: F <env._ZN3std6thread5local4fast12Key$LT$T$GT$3get17h2e018944c44a0e16E> func=23 [ undefined binding=global vis=hidden ]
+   - 39: F <main> func=29 [ binding=global vis=default ]
+   - 40: F <env._ZN3std2rt10lang_start17h6dcf2f2ba6f40ab2E> func=24 [ undefined binding=global vis=hidden ]
+   - 41: D <.L__unnamed_8> segment=0 offset=0 size=2 [ binding=local vis=default ]
+   - 42: D <.L__unnamed_9> segment=3 offset=0 size=16 [ binding=local vis=default ]
+   - 43: D <.L__unnamed_10> segment=4 offset=0 size=1 [ binding=local vis=default ]
+   - 44: D <.L__unnamed_11> segment=7 offset=0 size=21 [ binding=local vis=default ]
+   - 45: D <.L__unnamed_12> segment=9 offset=0 size=20 [ binding=local vis=default ]
+   - 46: D <.L__unnamed_13> segment=11 offset=0 size=11 [ binding=local vis=default ]
+   - 47: S <.debug_abbrev> section=7 [ binding=local vis=default ]
+   - 48: S <.debug_info> section=8 [ binding=local vis=default ]
+   - 49: S <.debug_ranges> section=9 [ binding=local vis=default ]
+   - 50: S <.debug_str> section=10 [ binding=local vis=default ]
+   - 51: S <.debug_line> section=13 [ binding=local vis=default ]
+  - segment info [count=14]
+   - 0: .rodata..L__unnamed_8 p2align=0 [ ]
+   - 1: .rodata..L__unnamed_2 p2align=2 [ ]
+   - 2: .rodata..L__unnamed_3 p2align=2 [ ]
+   - 3: .rodata..L__unnamed_9 p2align=0 [ ]
+   - 4: .rodata..L__unnamed_10 p2align=0 [ ]
+   - 5: .rodata..L__unnamed_4 p2align=2 [ ]
+   - 6: .rodata..L__unnamed_1 p2align=2 [ ]
+   - 7: .rodata..L__unnamed_11 p2align=0 [ ]
+   - 8: .rodata..L__unnamed_5 p2align=2 [ ]
+   - 9: .rodata..L__unnamed_12 p2align=0 [ ]
+   - 10: .rodata..L__unnamed_6 p2align=2 [ ]
+   - 11: .rodata..L__unnamed_13 p2align=0 [ ]
+   - 12: .rodata..L__unnamed_7 p2align=2 [ ]
+   - 13: .tbss._ZN7Example4VAR17__getit5__KEY17h9fd2473e7b8be3acE p2align=2 [ TLS ]
+Custom:
+ - name: "reloc.CODE"
+  - relocations for section: 5 (Code) [70]
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000007(file=0x00068b) symbol=1 <env.__stack_pointer>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x00001d(file=0x0006a1) symbol=1 <env.__stack_pointer>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000058(file=0x0006dc) symbol=2 <env._ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h27202336c85315f5E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000096(file=0x00071a) symbol=3 <env._ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h35d0e8c2bb311ebaE>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x0000cd(file=0x000751) symbol=4 <.L__unnamed_1>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0000db(file=0x00075f) symbol=5 <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h34847eaffd23fa57E>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x0000fc(file=0x000780) symbol=6 <.L__unnamed_2>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x00010c(file=0x000790) symbol=7 <.L__unnamed_3>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000126(file=0x0007aa) symbol=8 <env._ZN4core3fmt9Arguments6new_v117h7dbb756e30525a82E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00013d(file=0x0007c1) symbol=9 <env._ZN3std2io5stdio6_print17h14d58645d005d81eE>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x00016c(file=0x0007f0) symbol=10 <env._ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17ha3a2070627a4f169E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000185(file=0x000809) symbol=11 <env._ZN4core3fmt10ArgumentV13new17hcca9332d44637166E>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x0001c7(file=0x00084b) symbol=12 <.L__unnamed_4>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0001e5(file=0x000869) symbol=8 <env._ZN4core3fmt9Arguments6new_v117h7dbb756e30525a82E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0001fd(file=0x000881) symbol=9 <env._ZN3std2io5stdio6_print17h14d58645d005d81eE>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000211(file=0x000895) symbol=1 <env.__stack_pointer>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000223(file=0x0008a7) symbol=1 <env.__stack_pointer>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000239(file=0x0008bd) symbol=1 <env.__stack_pointer>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x00024b(file=0x0008cf) symbol=4 <.L__unnamed_1>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000259(file=0x0008dd) symbol=14 <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h6ca48062d7dc28eaE>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x00028d(file=0x000911) symbol=10 <env._ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17ha3a2070627a4f169E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0002a6(file=0x00092a) symbol=11 <env._ZN4core3fmt10ArgumentV13new17hcca9332d44637166E>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x0002e6(file=0x00096a) symbol=15 <.L__unnamed_5>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000304(file=0x000988) symbol=8 <env._ZN4core3fmt9Arguments6new_v117h7dbb756e30525a82E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00031b(file=0x00099f) symbol=9 <env._ZN3std2io5stdio6_print17h14d58645d005d81eE>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00033f(file=0x0009c3) symbol=16 <env._ZN3std6thread5spawn17hf28c4aa442f6c24aE>
+   - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x000345(file=0x0009c9) symbol=17 <__THREW__>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x00034d(file=0x0009d1) symbol=18 <env.__tls_base>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x000367(file=0x0009eb) symbol=4 <.L__unnamed_1>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x00036f(file=0x0009f3) symbol=19 <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17h74d7dfbf3779a8eaE>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00037b(file=0x0009ff) symbol=20 <invoke_vi>
+   - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x0003b3(file=0x000a37) symbol=17 <__THREW__>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x0003bb(file=0x000a3f) symbol=18 <env.__tls_base>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x0003d5(file=0x000a59) symbol=4 <.L__unnamed_1>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x0003dd(file=0x000a61) symbol=21 <env._ZN3std6thread5local17LocalKey$LT$T$GT$4with17hbb804fe11a7d0fdeE>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0003e9(file=0x000a6d) symbol=22 <invoke_ii>
+   - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x00044a(file=0x000ace) symbol=17 <__THREW__>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000452(file=0x000ad6) symbol=18 <env.__tls_base>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x00046c(file=0x000af0) symbol=10 <env._ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17ha3a2070627a4f169E>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x000474(file=0x000af8) symbol=11 <env._ZN4core3fmt10ArgumentV13new17hcca9332d44637166E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00048f(file=0x000b13) symbol=23 <invoke_viii>
+   - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x0004e1(file=0x000b65) symbol=17 <__THREW__>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x0004e9(file=0x000b6d) symbol=18 <env.__tls_base>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x000503(file=0x000b87) symbol=24 <.L__unnamed_6>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x00050b(file=0x000b8f) symbol=8 <env._ZN4core3fmt9Arguments6new_v117h7dbb756e30525a82E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00053f(file=0x000bc3) symbol=25 <invoke_viiiii>
+   - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x000575(file=0x000bf9) symbol=17 <__THREW__>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x00057d(file=0x000c01) symbol=18 <env.__tls_base>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x000597(file=0x000c1b) symbol=9 <env._ZN3std2io5stdio6_print17h14d58645d005d81eE>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0005af(file=0x000c33) symbol=20 <invoke_vi>
+   - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x000637(file=0x000cbb) symbol=17 <__THREW__>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x00063f(file=0x000cc3) symbol=18 <env.__tls_base>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x000655(file=0x000cd9) symbol=26 <env._ZN3std6thread19JoinHandle$LT$T$GT$4join17he9c18994c175b734E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000671(file=0x000cf5) symbol=27 <invoke_vii>
+   - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x0006c5(file=0x000d49) symbol=17 <__THREW__>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x0006ce(file=0x000d52) symbol=18 <env.__tls_base>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x0006ef(file=0x000d73) symbol=28 <.L__unnamed_7>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x0006f8(file=0x000d7c) symbol=29 <env._ZN4core6result19Result$LT$T$C$E$GT$6unwrap17h44a6fd0f54961d21E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00070d(file=0x000d91) symbol=23 <invoke_viii>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000774(file=0x000df8) symbol=1 <env.__stack_pointer>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00077c(file=0x000e00) symbol=30 <__cxa_find_matching_catch_2>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000785(file=0x000e09) symbol=31 <getTempRet0>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0007d8(file=0x000e5c) symbol=32 <env._ZN4core3ptr60drop_in_place$LT$std..thread..JoinHandle$LT$$LP$$RP$$GT$$GT$17hc9c3bc48539054a5E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0007f2(file=0x000e76) symbol=33 <__resumeException>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000806(file=0x000e8a) symbol=35 <env._ZN4core4cell13Cell$LT$T$GT$3new17h5078430062ffaa59E>
+   - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x000816(file=0x000e9a) symbol=37 <_ZN7Example4VAR17__getit5__KEY17h9fd2473e7b8be3acE>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x00081e(file=0x000ea2) symbol=18 <env.__tls_base>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00082f(file=0x000eb3) symbol=38 <env._ZN3std6thread5local4fast12Key$LT$T$GT$3get17h2e018944c44a0e16E>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x00083f(file=0x000ec3) symbol=13 <_ZN7Example4main17ha24d1522636b5b12E>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00084d(file=0x000ed1) symbol=40 <env._ZN3std2rt10lang_start17h6dcf2f2ba6f40ab2E>
+Custom:
+ - name: "reloc.DATA"
+  - relocations for section: 6 (Data) [9]
+   - R_WASM_MEMORY_ADDR_I32 offset=0x00000d(file=0x000eef) symbol=41 <.L__unnamed_8>
+   - R_WASM_MEMORY_ADDR_I32 offset=0x00003a(file=0x000f1c) symbol=42 <.L__unnamed_9>
+   - R_WASM_MEMORY_ADDR_I32 offset=0x000042(file=0x000f24) symbol=43 <.L__unnamed_10>
+   - R_WASM_TABLE_INDEX_I32 offset=0x00004f(file=0x000f31) symbol=36 <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE>
+   - R_WASM_MEMORY_ADDR_I32 offset=0x000073(file=0x000f55) symbol=44 <.L__unnamed_11>
+   - R_WASM_MEMORY_ADDR_I32 offset=0x00007b(file=0x000f5d) symbol=43 <.L__unnamed_10>
+   - R_WASM_MEMORY_ADDR_I32 offset=0x0000a3(file=0x000f85) symbol=45 <.L__unnamed_12>
+   - R_WASM_MEMORY_ADDR_I32 offset=0x0000ab(file=0x000f8d) symbol=43 <.L__unnamed_10>
+   - R_WASM_MEMORY_ADDR_I32 offset=0x0000ca(file=0x000fac) symbol=46 <.L__unnamed_13>
+Custom:
+ - name: "reloc..debug_info"
+  - relocations for section: 8 (.debug_info) [242]
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000006(file=0x0038d3) symbol=47 <.debug_abbrev>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00000c(file=0x0038d9) symbol=50 <.debug_str>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000012(file=0x0038df) symbol=50 <.debug_str>+0x41
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000016(file=0x0038e3) symbol=51 <.debug_line>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00001a(file=0x0038e7) symbol=50 <.debug_str>+0x4d
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000022(file=0x0038ef) symbol=49 <.debug_ranges>+0x20
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000027(file=0x0038f4) symbol=50 <.debug_str>+0x6a
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00002c(file=0x0038f9) symbol=50 <.debug_str>+0x72
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000031(file=0x0038fe) symbol=50 <.debug_str>+0x77
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000036(file=0x003903) symbol=50 <.debug_str>+0x7f
+   - R_WASM_MEMORY_ADDR_I32 offset=0x000043(file=0x003910) symbol=37 <_ZN7Example4VAR17__getit5__KEY17h9fd2473e7b8be3acE>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000048(file=0x003915) symbol=50 <.debug_str>+0x21e
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x00004e(file=0x00391b) symbol=34 <_ZN7Example4VAR16__init17h61c911807fea57ffE>
+   - R_WASM_GLOBAL_INDEX_I32 offset=0x000059(file=0x003926) symbol=1 <env.__stack_pointer>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00005e(file=0x00392b) symbol=50 <.debug_str>+0x2a1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000062(file=0x00392f) symbol=50 <.debug_str>+0x2cd
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x00006e(file=0x00393b) symbol=36 <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE>
+   - R_WASM_GLOBAL_INDEX_I32 offset=0x000079(file=0x003946) symbol=1 <env.__stack_pointer>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00007e(file=0x00394b) symbol=50 <.debug_str>+0x2d4
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000082(file=0x00394f) symbol=50 <.debug_str>+0x77
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x00008f(file=0x00395c) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00009c(file=0x003969) symbol=50 <.debug_str>+0x251
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0000a0(file=0x00396d) symbol=50 <.debug_str>+0x274
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0000a7(file=0x003974) symbol=49 <.debug_ranges>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0000af(file=0x00397c) symbol=50 <.debug_str>+0x32b
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x0000bb(file=0x003988) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>+0x168
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0000c8(file=0x003995) symbol=50 <.debug_str>+0x353
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x0000d5(file=0x0039a2) symbol=13 <_ZN7Example4main17ha24d1522636b5b12E>
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0000e2(file=0x0039af) symbol=50 <.debug_str>+0x277
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0000e6(file=0x0039b3) symbol=50 <.debug_str>+0x29c
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x0000ed(file=0x0039ba) symbol=13 <_ZN7Example4main17ha24d1522636b5b12E>+0x71
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0000fa(file=0x0039c7) symbol=50 <.debug_str>+0x353
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000106(file=0x0039d3) symbol=13 <_ZN7Example4main17ha24d1522636b5b12E>+0x129
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000113(file=0x0039e0) symbol=50 <.debug_str>+0x365
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x00011e(file=0x0039eb) symbol=13 <_ZN7Example4main17ha24d1522636b5b12E>+0x22e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00012b(file=0x0039f8) symbol=50 <.debug_str>+0x353
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00013a(file=0x003a07) symbol=50 <.debug_str>+0x85
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00013f(file=0x003a0c) symbol=50 <.debug_str>+0x89
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000144(file=0x003a11) symbol=50 <.debug_str>+0x90
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000149(file=0x003a16) symbol=50 <.debug_str>+0x96
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00014e(file=0x003a1b) symbol=50 <.debug_str>+0x203
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000159(file=0x003a26) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00015e(file=0x003a2b) symbol=50 <.debug_str>+0xcb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000169(file=0x003a36) symbol=50 <.debug_str>+0x169
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000179(file=0x003a46) symbol=50 <.debug_str>+0x19f
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000180(file=0x003a4d) symbol=50 <.debug_str>+0x177
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000186(file=0x003a53) symbol=50 <.debug_str>+0x184
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00018c(file=0x003a59) symbol=50 <.debug_str>+0x18f
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000194(file=0x003a61) symbol=50 <.debug_str>+0xd1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000199(file=0x003a66) symbol=50 <.debug_str>+0x145
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001a4(file=0x003a71) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001a9(file=0x003a76) symbol=50 <.debug_str>+0xcb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001b7(file=0x003a84) symbol=50 <.debug_str>+0xb6e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001c2(file=0x003a8f) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001c7(file=0x003a94) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001d3(file=0x003aa0) symbol=50 <.debug_str>+0xb60
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001de(file=0x003aab) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001e3(file=0x003ab0) symbol=50 <.debug_str>+0x36b
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001ee(file=0x003abb) symbol=50 <.debug_str>+0x89
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0001f9(file=0x003ac6) symbol=50 <.debug_str>+0x5e0
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000205(file=0x003ad2) symbol=50 <.debug_str>+0x37e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00020c(file=0x003ad9) symbol=50 <.debug_str>+0xcb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000218(file=0x003ae5) symbol=50 <.debug_str>+0x4c4
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00021f(file=0x003aec) symbol=50 <.debug_str>+0x3b7
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00022a(file=0x003af7) symbol=50 <.debug_str>+0x37b
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000235(file=0x003b02) symbol=50 <.debug_str>+0x47e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000241(file=0x003b0e) symbol=50 <.debug_str>+0x475
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000248(file=0x003b15) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000254(file=0x003b21) symbol=50 <.debug_str>+0xb55
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00025f(file=0x003b2c) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000264(file=0x003b31) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000271(file=0x003b3e) symbol=50 <.debug_str>+0x372
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000276(file=0x003b43) symbol=50 <.debug_str>+0x376
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00027b(file=0x003b48) symbol=50 <.debug_str>+0x89
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000280(file=0x003b4d) symbol=50 <.debug_str>+0x37e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000287(file=0x003b54) symbol=50 <.debug_str>+0x37b
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000296(file=0x003b63) symbol=50 <.debug_str>+0x3bc
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00029b(file=0x003b68) symbol=50 <.debug_str>+0x3c0
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002a0(file=0x003b6d) symbol=50 <.debug_str>+0x431
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002a7(file=0x003b74) symbol=50 <.debug_str>+0xcb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002b5(file=0x003b82) symbol=50 <.debug_str>+0x485
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002ba(file=0x003b87) symbol=50 <.debug_str>+0x490
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002bf(file=0x003b8c) symbol=50 <.debug_str>+0x49e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002c4(file=0x003b91) symbol=50 <.debug_str>+0x4bd
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002cb(file=0x003b98) symbol=50 <.debug_str>+0x4a4
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002db(file=0x003ba8) symbol=50 <.debug_str>+0x9b
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002e0(file=0x003bad) symbol=50 <.debug_str>+0xa0
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002e5(file=0x003bb2) symbol=50 <.debug_str>+0xc1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002f0(file=0x003bbd) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0002f5(file=0x003bc2) symbol=50 <.debug_str>+0xab
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000301(file=0x003bce) symbol=50 <.debug_str>+0xb1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00030c(file=0x003bd9) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000311(file=0x003bde) symbol=50 <.debug_str>+0xab
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00031d(file=0x003bea) symbol=50 <.debug_str>+0x10d
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000328(file=0x003bf5) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00032d(file=0x003bfa) symbol=50 <.debug_str>+0xab
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000339(file=0x003c06) symbol=50 <.debug_str>+0x1d9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000344(file=0x003c11) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000349(file=0x003c16) symbol=50 <.debug_str>+0xab
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000355(file=0x003c22) symbol=50 <.debug_str>+0x1a9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000360(file=0x003c2d) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000365(file=0x003c32) symbol=50 <.debug_str>+0xab
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000371(file=0x003c3e) symbol=50 <.debug_str>+0x4de
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00037c(file=0x003c49) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000381(file=0x003c4e) symbol=50 <.debug_str>+0xab
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00038d(file=0x003c5a) symbol=50 <.debug_str>+0x75b
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000398(file=0x003c65) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00039d(file=0x003c6a) symbol=50 <.debug_str>+0xab
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0003aa(file=0x003c77) symbol=50 <.debug_str>+0xd6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0003af(file=0x003c7c) symbol=50 <.debug_str>+0xef
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0003c4(file=0x003c91) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0003d2(file=0x003c9f) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0003df(file=0x003cac) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0003ea(file=0x003cb7) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0003f0(file=0x003cbd) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0003fb(file=0x003cc8) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000400(file=0x003ccd) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00040d(file=0x003cda) symbol=50 <.debug_str>+0x30c
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000422(file=0x003cef) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00042f(file=0x003cfc) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00043c(file=0x003d09) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000447(file=0x003d14) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00044d(file=0x003d1a) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000458(file=0x003d25) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00045d(file=0x003d2a) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00046a(file=0x003d37) symbol=50 <.debug_str>+0x385
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00047f(file=0x003d4c) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00048d(file=0x003d5a) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00049a(file=0x003d67) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0004a5(file=0x003d72) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0004ab(file=0x003d78) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0004b6(file=0x003d83) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0004bb(file=0x003d88) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0004c8(file=0x003d95) symbol=50 <.debug_str>+0x439
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0004dd(file=0x003daa) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0004ea(file=0x003db7) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0004f7(file=0x003dc4) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000502(file=0x003dcf) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000508(file=0x003dd5) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000513(file=0x003de0) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000518(file=0x003de5) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000525(file=0x003df2) symbol=50 <.debug_str>+0x6e6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00053a(file=0x003e07) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000548(file=0x003e15) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000555(file=0x003e22) symbol=50 <.debug_str>+0xe1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000560(file=0x003e2d) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000566(file=0x003e33) symbol=50 <.debug_str>+0xe6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000571(file=0x003e3e) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000576(file=0x003e43) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000584(file=0x003e51) symbol=50 <.debug_str>+0x330
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000589(file=0x003e56) symbol=50 <.debug_str>+0x334
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00058e(file=0x003e5b) symbol=50 <.debug_str>+0x348
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000599(file=0x003e66) symbol=50 <.debug_str>+0x33a
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00059e(file=0x003e6b) symbol=50 <.debug_str>+0x33e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005a9(file=0x003e76) symbol=50 <.debug_str>+0x344
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005b7(file=0x003e84) symbol=50 <.debug_str>+0x45a
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005bc(file=0x003e89) symbol=50 <.debug_str>+0x45e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005c1(file=0x003e8e) symbol=50 <.debug_str>+0x46a
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005c8(file=0x003e95) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005d6(file=0x003ea3) symbol=50 <.debug_str>+0x3b2
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005db(file=0x003ea8) symbol=50 <.debug_str>+0x4aa
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005e0(file=0x003ead) symbol=50 <.debug_str>+0x4b3
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005e7(file=0x003eb4) symbol=50 <.debug_str>+0x4b1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005f3(file=0x003ec0) symbol=50 <.debug_str>+0x4f0
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0005fa(file=0x003ec7) symbol=50 <.debug_str>+0x4b1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000608(file=0x003ed5) symbol=50 <.debug_str>+0x4ca
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00060d(file=0x003eda) symbol=50 <.debug_str>+0x4ce
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000612(file=0x003edf) symbol=50 <.debug_str>+0x54f
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00061d(file=0x003eea) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000622(file=0x003eef) symbol=50 <.debug_str>+0x523
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00062e(file=0x003efb) symbol=50 <.debug_str>+0x93b
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000639(file=0x003f06) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00063e(file=0x003f0b) symbol=50 <.debug_str>+0x523
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00064c(file=0x003f19) symbol=50 <.debug_str>+0x58a
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000651(file=0x003f1e) symbol=50 <.debug_str>+0x591
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00065c(file=0x003f29) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000662(file=0x003f2f) symbol=50 <.debug_str>+0x9f6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00066d(file=0x003f3a) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000674(file=0x003f41) symbol=50 <.debug_str>+0x5e7
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000679(file=0x003f46) symbol=50 <.debug_str>+0x687
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00068e(file=0x003f5b) symbol=50 <.debug_str>+0x5ee
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00069b(file=0x003f68) symbol=50 <.debug_str>+0x683
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006a8(file=0x003f75) symbol=50 <.debug_str>+0x5ee
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006b3(file=0x003f80) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006bc(file=0x003f89) symbol=50 <.debug_str>+0x681
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006c1(file=0x003f8e) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006cd(file=0x003f9a) symbol=50 <.debug_str>+0x683
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006d8(file=0x003fa5) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006e1(file=0x003fae) symbol=50 <.debug_str>+0x681
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006e6(file=0x003fb3) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006f5(file=0x003fc2) symbol=50 <.debug_str>+0xa5
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0006fc(file=0x003fc9) symbol=50 <.debug_str>+0xdd
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000703(file=0x003fd0) symbol=50 <.debug_str>+0x174
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00070e(file=0x003fdb) symbol=50 <.debug_str>+0x301
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000717(file=0x003fe4) symbol=50 <.debug_str>+0x35e
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00071e(file=0x003feb) symbol=50 <.debug_str>+0xeb
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00072e(file=0x003ffb) symbol=50 <.debug_str>+0x359
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000737(file=0x004004) symbol=50 <.debug_str>+0x368
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00073e(file=0x00400b) symbol=50 <.debug_str>+0x3ac
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000743(file=0x004010) symbol=50 <.debug_str>+0x3b2
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000748(file=0x004015) symbol=50 <.debug_str>+0x5c8
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000753(file=0x004020) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000758(file=0x004025) symbol=50 <.debug_str>+0x4ca
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000763(file=0x004030) symbol=50 <.debug_str>+0x582
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00076f(file=0x00403c) symbol=50 <.debug_str>+0x506
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00077a(file=0x004047) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00077f(file=0x00404c) symbol=50 <.debug_str>+0x4d7
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00078a(file=0x004057) symbol=50 <.debug_str>+0x4fc
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000795(file=0x004062) symbol=50 <.debug_str>+0x501
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007a1(file=0x00406e) symbol=50 <.debug_str>+0xab5
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007ac(file=0x004079) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007b1(file=0x00407e) symbol=50 <.debug_str>+0x4ca
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007bc(file=0x004089) symbol=50 <.debug_str>+0x582
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007c8(file=0x004095) symbol=50 <.debug_str>+0x7ea
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007d3(file=0x0040a0) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007d8(file=0x0040a5) symbol=50 <.debug_str>+0x4d7
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007e3(file=0x0040b0) symbol=50 <.debug_str>+0x4fc
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007ee(file=0x0040bb) symbol=50 <.debug_str>+0x501
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0007fb(file=0x0040c8) symbol=50 <.debug_str>+0x3ac
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000800(file=0x0040cd) symbol=50 <.debug_str>+0x3da
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000808(file=0x0040d5) symbol=50 <.debug_str>+0x5f1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00080d(file=0x0040da) symbol=50 <.debug_str>+0x63c
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000818(file=0x0040e5) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000821(file=0x0040ee) symbol=50 <.debug_str>+0x3e1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000826(file=0x0040f3) symbol=50 <.debug_str>+0x523
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000831(file=0x0040fe) symbol=50 <.debug_str>+0x5ff
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00083f(file=0x00410c) symbol=50 <.debug_str>+0x403
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00084a(file=0x004117) symbol=50 <.debug_str>+0xa9
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000853(file=0x004120) symbol=50 <.debug_str>+0x3e1
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000858(file=0x004125) symbol=50 <.debug_str>+0x3e3
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000863(file=0x004130) symbol=50 <.debug_str>+0x3f6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00087b(file=0x004148) symbol=50 <.debug_str>+0x3c6
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000886(file=0x004153) symbol=50 <.debug_str>+0x3ec
+   - R_WASM_SECTION_OFFSET_I32 offset=0x00088f(file=0x00415c) symbol=50 <.debug_str>+0x3fd
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000896(file=0x004163) symbol=50 <.debug_str>+0x466
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0008a1(file=0x00416e) symbol=50 <.debug_str>+0x52b
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0008aa(file=0x004177) symbol=50 <.debug_str>+0x612
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0008b1(file=0x00417e) symbol=50 <.debug_str>+0x523
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0008bc(file=0x004189) symbol=50 <.debug_str>+0x5ff
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0008cc(file=0x004199) symbol=50 <.debug_str>+0x5f7
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0008d9(file=0x0041a6) symbol=50 <.debug_str>+0x606
+   - R_WASM_SECTION_OFFSET_I32 offset=0x0008f3(file=0x0041c0) symbol=50 <.debug_str>+0x88f
+Custom:
+ - name: "reloc..debug_ranges"
+  - relocations for section: 9 (.debug_ranges) [14]
+   - R_WASM_FUNCTION_OFFSET_I32 offset=00000000(file=0x003e73) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>+0x76
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000004(file=0x003e77) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>+0xc8
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000008(file=0x003e7b) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>+0xe9
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x00000c(file=0x003e7f) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>+0x141
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000010(file=0x003e83) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>+0x214
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000014(file=0x003e87) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>+0x216
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000020(file=0x003e93) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000024(file=0x003e97) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>+0x216
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000028(file=0x003e9b) symbol=13 <_ZN7Example4main17ha24d1522636b5b12E>
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x00002c(file=0x003e9f) symbol=13 <_ZN7Example4main17ha24d1522636b5b12E>+0x5de
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000030(file=0x003ea3) symbol=34 <_ZN7Example4VAR16__init17h61c911807fea57ffE>
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000034(file=0x003ea7) symbol=34 <_ZN7Example4VAR16__init17h61c911807fea57ffE>+0x17
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000038(file=0x003eab) symbol=36 <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE>
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x00003c(file=0x003eaf) symbol=36 <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE>+0x28
+Custom:
+ - name: "reloc..debug_pubnames"
+  - relocations for section: 11 (.debug_pubnames) [1]
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000006(file=0x003ed5) symbol=48 <.debug_info>
+Custom:
+ - name: "reloc..debug_pubtypes"
+  - relocations for section: 12 (.debug_pubtypes) [1]
+   - R_WASM_SECTION_OFFSET_I32 offset=0x000006(file=0x003ef7) symbol=48 <.debug_info>
+Custom:
+ - name: "reloc..debug_line"
+  - relocations for section: 13 (.debug_line) [4]
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x0000a9(file=0x003fbc) symbol=0 <_ZN7Example2xs17hdd373909e2b07503E>
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x0000f1(file=0x004004) symbol=13 <_ZN7Example4main17ha24d1522636b5b12E>
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x000159(file=0x00406c) symbol=34 <_ZN7Example4VAR16__init17h61c911807fea57ffE>
+   - R_WASM_FUNCTION_OFFSET_I32 offset=0x00017a(file=0x00408d) symbol=36 <_ZN7Example4VAR17__getit17h4e0ead78463ab04dE>
+Custom:
+ - name: "producers"
+Custom:
+ - name: "target_features"
+  - [+] atomics
+  - [+] bulk-memory
