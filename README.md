@@ -183,12 +183,12 @@ directory (and see the other targets)).
 "R_WASM_MEMORY_ADDR_TLS_SLEB" in the rust originated object file, but that
 don't report linking problems.  From the '-x' wasm-objdump file:
 
-   - 17: D <__THREW__> [ undefined binding=global vis=default ]
-   <snip>
-    Custom:
-     - name: "reloc.CODE"
-      - relocations for section: 5 (Code) [70]
-       - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x0006c5(file=0x000d49) symbol=17 <__THREW__>
+       - 17: D <__THREW__> [ undefined binding=global vis=default ]
+       <snip>
+        Custom:
+         - name: "reloc.CODE"
+          - relocations for section: 5 (Code) [70]
+           - R_WASM_MEMORY_ADDR_TLS_SLEB offset=0x0006c5(file=0x000d49) symbol=17 <__THREW__>
 
 I thought it might be related to the [this
 issue](https://github.com/emscripten-core/emscripten/pull/14982#issuecomment-909735685)
