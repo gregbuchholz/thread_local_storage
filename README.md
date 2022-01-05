@@ -92,7 +92,7 @@ the `-x` option (raw output in [dump-x.txt](./other/dump-x.txt) and [dump-x_rust
      <snip>
        - R_WASM_MEMORY_ADDR_I32 offset=0x000043(file=0x003910) symbol=37 <Example::VAR1::__getit::__KEY>
 
-...and with `-d -r` ([dump-d.txt](./other/dump-d.txt) and [dump-d_rustfilt.txt](./other/dump-d_rustfilt.txt)):
+...you will notice segment 13 has .tbss mentioned and with `wasm-objdump -d -r` ([dump-d.txt](./other/dump-d.txt) and [dump-d_rustfilt.txt](./other/dump-d_rustfilt.txt)):
 
     $ wasm-objdump -d -r ./target/wasm32-unknown-emscripten/debug/deps/Example.1b0wam0nd5eghoka.rcgu.o | rustfilt
 
@@ -109,7 +109,7 @@ been passed through the rust name demangler).
 The `wasm-ld` error message comes from `scanRelocations` function in [Relocations.cpp](https://github.com/llvm/llvm-project/blob/304d30bc594bf99bba9ee780007ac78755a9ff7a/lld/wasm/Relocations.cpp#L120-L123) at line #120.  
 ![](images/sym_isTLS.jpg)
 
-That function uses the isTLS() function, which uses `WASM_SYMBOL_TLS`. There
+That function uses the [isTLS()](https://github.com/llvm/llvm-project/blob/2899e8de67aae052e6c93b95a2fd152c86e0aefc/lld/wasm/Symbols.cpp#L213) method, which uses `WASM_SYMBOL_TLS`. There
 are only a select few places where that flag appears:
 
     /emsdk/llvm/git/src$ find . -type f \( -name "*.h" -o -name "*.cpp" \) -exec grep -H  WASM_SYMBOL_TLS {} \;
@@ -149,17 +149,19 @@ method which has the following:
 ```
 
 ...but when stepping through the code with the debugger, I see that
-`seg->isTLS()` appears to be [true for the segment](./seg.isTLS_after.jpg) that
-the `Example::VAR1::__getit::__KEY::h9fd2473e7b8be3ac` symbol is in, so it
-doesn't set the implicitTLS flag, and thus presumably wouldn't set the `flags
-|= WASM_SYMBOL_TLS;` and therefore isTLS() wouldn't ever be true on the symbol
+`seg->isTLS()` appears to be [true for the
+segment](./images/seg.isTLS_after.jpg) that the
+`Example::VAR1::__getit::__KEY::h9fd2473e7b8be3ac` symbol is in, so it doesn't
+set the implicitTLS flag, and thus presumably wouldn't set the `flags |=
+WASM_SYMBOL_TLS;` and therefore isTLS() wouldn't ever be true on the symbol
 itself, and you always would get the linker error in Relocations.cpp.  The
 "flags" for that symbol are 2 as can be seen from the screenshot above.  But
 the "always failing" assumption must be false, since Emscripten can work with
 thread local data, as shown by this [C program](/src/c_example), which does
 essentially the same thing as the Rust program, and uses both `.tdata` and
 `.tbss` sections without issue (see the [example
-assembly](/src/c_example/example.s) below).
+assembly](/src/c_example/example.s) below) (build by using `make wasm` in that
+directory (and see the other targets)).
 
         .type	variable1,@object               # @variable1
         .section	.tdata.variable1,"T",@
@@ -220,7 +222,7 @@ To generate the object files from the rust source, compile the stub:
     cargo +nightly build --target=wasm32-unknown-emscripten -Z build-std=panic_abort,std
 
 (If anyone is interested stepping through wasm-ld, there is also a vscode
-launch configuration file in the repository that will help with setting the arguments to lld, but
-you'll need to edit it to reflect the location the object files on your
-computer.)
+[launch configuration file](./other/launch.json) in the repository that will
+help with setting the arguments to lld, but you'll need to edit it to reflect
+the location the object files on your computer.)
 
