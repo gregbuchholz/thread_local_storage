@@ -1,4 +1,4 @@
-# Threa local storage link issue with Rust/wasm-ld/Emscripten
+# Thread local storage link issue with Rust/wasm-ld/Emscripten
 
 This repository is a small example to help narrow down the cause of a problem
 which occurs when trying to enable threads on a Rust program compiling to the
@@ -197,9 +197,11 @@ the thread local storage, but the same link error occurs when building without
 debugging symbols. (The object files for the `--release` build are [here](/target/wasm32-unknown-emscripten/release/deps/) as
 well). 
 
-Anyone have thoughts on a good place to start diving into this issue more?  If
-there is another more appropriate place to ask the question, please let me
-know.
+Anyone have thoughts on a good place to start diving into this issue more?
+Would it be more productive to try and determine why the --verbose output of
+wasm-ld doesn't have the .tbss section listed?  If there is another more
+appropriate place to ask about this issue, please let me know.  It seems like
+it may be sort of a cross-cutting issue.
 
 The versions of the various programs:
 
@@ -209,8 +211,17 @@ The versions of the various programs:
     $ wasm-objdump --version
     1.0.25
 
+    $ emcc -v
+    emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.1-git (f8b200a67ebaae3cfdf26600d05a5ab90f14557b)
+    clang version 14.0.0 (https://github.com/llvm/llvm-project.git eec312ee7f97638508679169cbf4b5183d0b1112)
+    Target: wasm32-unknown-emscripten
+    Thread model: posix
+    InstalledDir: /home/greg/Extras/emsdk/llvm/git/build_main_64/bin
+
     $ rustc +nightly --version
     rustc 1.59.0-nightly (efec54529 2021-12-04)
+
+...although I've tried with earlier emscripten 2.0.34 and 3.0.0, along with earlier versions of rust.
 
 To generate the object files from the rust source, compile the stub:
 
