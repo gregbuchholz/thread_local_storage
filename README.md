@@ -203,6 +203,21 @@ wasm-ld doesn't have the .tbss section listed?  If there is another more
 appropriate place to ask about this issue, please let me know.  It seems like
 it may be sort of a cross-cutting issue.
 
+I did find the following comment interesting in [rustc_codegen_llvm/src/consts.rs](https://github.com/rust-lang/rust/blob/66f64a441a05cee8d5d701477b43ed851f778f3a/compiler/rustc_codegen_llvm/src/consts.rs#L285-L290)
+
+```Rust
+        // Thread-local statics in some other crate need to *always* be linked
+        // against in a thread-local fashion, so we need to be sure to apply the
+        // thread-local attribute locally if it was present remotely. If we
+        // don't do this then linker errors can be generated where the linker
+        // complains that one object files has a thread local version of the
+        // symbol and another one doesn't.
+        if fn_attrs.flags.contains(CodegenFnAttrFlags::THREAD_LOCAL) {
+            llvm::set_thread_local_mode(g, self.tls_model);
+        }
+```
+...only because it mentions thread local storage and link errors, so that might just be a red herring. 
+
 The versions of the various programs:
 
     $ wasm-ld --version

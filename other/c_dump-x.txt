@@ -1,0 +1,106 @@
+
+example.o:	file format wasm 0x1
+
+Section Details:
+
+Type[5]:
+ - type[0] (i32) -> i32
+ - type[1] (i32, i32) -> i32
+ - type[2] (i32) -> nil
+ - type[3] () -> i32
+ - type[4] (i32, i32, i32) -> i32
+Import[10]:
+ - memory[0] pages: initial=1 <- env.__linear_memory
+ - global[0] i32 mutable=1 <- env.__stack_pointer
+ - func[0] sig=0 <env.sleep> <- env.sleep
+ - func[1] sig=1 <env.printf> <- env.printf
+ - func[2] sig=2 <env.thrd_exit> <- env.thrd_exit
+ - func[3] sig=4 <env.thrd_create> <- env.thrd_create
+ - func[4] sig=1 <env.thrd_join> <- env.thrd_join
+ - table[0] type=funcref initial=1 <- env.__indirect_function_table
+ - global[1] i32 mutable=1 <- GOT.mem.variable1
+ - global[2] i32 mutable=1 <- GOT.mem.variable2
+Function[3]:
+ - func[5] sig=0 <test>
+ - func[6] sig=3 <__original_main>
+ - func[7] sig=1 <main>
+Elem[1]:
+ - segment[0] flags=0 table=0 count=1 - init i32=1
+  - elem[1] = func[5] <test>
+DataCount:
+ - data count: 5
+Code[3]:
+ - func[5] size=153 <test>
+ - func[6] size=280 <__original_main>
+ - func[7] size=15 <main>
+Data[5]:
+ - segment[0] <.tdata.variable1> memory=0 size=4 - init i32=0
+  - 0000000: 0100 0000                                ....
+ - segment[1] <.tbss.variable2> memory=0 size=4 - init i32=4
+  - 0000004: 0000 0000                                ....
+ - segment[2] <.rodata..L.str> memory=0 size=41 - init i32=8
+  - 0000008: 696e 2074 6872 6561 642c 2076 6172 6961  in thread, varia
+  - 0000018: 626c 6531 3a20 2564 2c20 7661 7269 6162  ble1: %d, variab
+  - 0000028: 6c65 323a 2025 640a 00                   le2: %d..
+ - segment[3] <.rodata..L.str.1> memory=0 size=28 - init i32=49
+  - 0000031: 6d61 696e 2c20 7661 7269 6162 6c65 3120  main, variable1 
+  - 0000041: 6265 666f 7265 3a20 2564 0a00            before: %d..
+ - segment[4] <.rodata..L.str.2> memory=0 size=37 - init i32=77
+  - 000004d: 6d61 696e 2c20 7661 7269 6162 6c65 3120  main, variable1 
+  - 000005d: 6166 7465 723a 2025 642c 2076 6172 323a  after: %d, var2:
+  - 000006d: 2025 640a 00                              %d..
+Custom:
+ - name: "linking"
+  - symbol table [count=14]
+   - 0: F <test> func=5 [ binding=global vis=default ]
+   - 1: G <env.__stack_pointer> global=0 [ undefined binding=global vis=default ]
+   - 2: F <env.sleep> func=0 [ undefined binding=global vis=default ]
+   - 3: D <variable1> segment=0 offset=0 size=4 [ tls binding=global vis=default ]
+   - 4: D <variable2> segment=1 offset=0 size=4 [ tls binding=global vis=default ]
+   - 5: D <.L.str> segment=2 offset=0 size=41 [ binding=local vis=default ]
+   - 6: F <env.printf> func=1 [ undefined binding=global vis=default ]
+   - 7: F <env.thrd_exit> func=2 [ undefined binding=global vis=default ]
+   - 8: F <__original_main> func=6 [ binding=global vis=default ]
+   - 9: D <.L.str.1> segment=3 offset=0 size=28 [ binding=local vis=default ]
+   - 10: F <env.thrd_create> func=3 [ undefined binding=global vis=default ]
+   - 11: D <.L.str.2> segment=4 offset=0 size=37 [ binding=local vis=default ]
+   - 12: F <env.thrd_join> func=4 [ undefined binding=global vis=default ]
+   - 13: F <main> func=7 [ binding=global vis=default ]
+  - segment info [count=5]
+   - 0: .tdata.variable1 p2align=2 [ TLS ]
+   - 1: .tbss.variable2 p2align=2 [ TLS ]
+   - 2: .rodata..L.str p2align=0 [ STRINGS ]
+   - 3: .rodata..L.str.1 p2align=0 [ STRINGS ]
+   - 4: .rodata..L.str.2 p2align=0 [ STRINGS ]
+Custom:
+ - name: "reloc.CODE"
+  - relocations for section: 5 (Code) [21]
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000007(file=0x000120) symbol=1 <env.__stack_pointer>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x00001c(file=0x000135) symbol=1 <env.__stack_pointer>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00002f(file=0x000148) symbol=2 <env.sleep>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000036(file=0x00014f) symbol=3 <variable1>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x000051(file=0x00016a) symbol=4 <variable2>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x00007c(file=0x000195) symbol=5 <.L.str>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000088(file=0x0001a1) symbol=6 <env.printf>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000095(file=0x0001ae) symbol=7 <env.thrd_exit>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x0000a2(file=0x0001bb) symbol=1 <env.__stack_pointer>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x0000b7(file=0x0001d0) symbol=1 <env.__stack_pointer>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x0000c8(file=0x0001e1) symbol=3 <variable1>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x0000de(file=0x0001f7) symbol=9 <.L.str.1>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0000ea(file=0x000203) symbol=6 <env.printf>
+   - R_WASM_TABLE_INDEX_SLEB offset=0x0000f1(file=0x00020a) symbol=0 <test>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00010a(file=0x000223) symbol=10 <env.thrd_create>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x00013d(file=0x000256) symbol=4 <variable2>
+   - R_WASM_MEMORY_ADDR_SLEB offset=0x000168(file=0x000281) symbol=11 <.L.str.2>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x00017f(file=0x000298) symbol=6 <env.printf>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x000195(file=0x0002ae) symbol=12 <env.thrd_join>
+   - R_WASM_GLOBAL_INDEX_LEB offset=0x0001ad(file=0x0002c6) symbol=1 <env.__stack_pointer>
+   - R_WASM_FUNCTION_INDEX_LEB offset=0x0001bb(file=0x0002d4) symbol=8 <__original_main>
+Custom:
+ - name: "producers"
+Custom:
+ - name: "target_features"
+  - [+] atomics
+  - [+] bulk-memory
+  - [+] mutable-globals
+  - [+] sign-ext
