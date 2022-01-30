@@ -2,7 +2,7 @@ There's one other difference to notice in the objdumps of the Rust program
 vs. the [C
 version](https://github.com/gregbuchholz/thread_local_storage/blob/main/src/c_example/example.c).
 In the `wasm-objdump -x` on the C example ([output
-here]()),
+here](https://github.com/gregbuchholz/thread_local_storage/blob/72d01b343894c30081d04791a2af90207c23bedb/other/c_dump-x.txt#L58-L59)),
 the two thread local variables (`variable1` & `variable2`) have a "tls"
 notation in the "linking" symbol table (symbols 3 and 4):
 
@@ -17,7 +17,7 @@ notation in the "linking" symbol table (symbols 3 and 4):
 
 ...whereas with the Rust example there is no such notation on our symbol #37 of
 interest (output from wasm-objdump
-[here](https://github.com/gregbuchholz/thread_local_storage/blob/629370a92e8b38d3b0cb69b8acc511214c39b1a4/other/dump-x.txt#L158):
+[here](https://github.com/gregbuchholz/thread_local_storage/blob/629370a92e8b38d3b0cb69b8acc511214c39b1a4/other/dump-x.txt#L158)):
 
     Custom:
      - name: "linking"
